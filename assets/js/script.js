@@ -73,6 +73,7 @@ function gameStart(userOption) {
     if(userSelection === computerSelection) {  
     drawResult();
     } else {
+        //i need to arrange this. how this can help?
         whoWins(userOption, computerSelection);
         
         whoWins(computerOption, userSelection);
@@ -83,9 +84,11 @@ function gameStart(userOption) {
 
 
 
-//function will verify if the computer choice is a value from the key 'beats'
+//function will verify the nameSelected is in the selection.beats 
 function whoWins(selection, nameSelected) {
+    //array with the options that can be defeated
  const options = selection.beats;
+ // for loop to evaluate each option and compare with the nameSelected
  for (let i = 0; i < options.length; i++) {
     const option=options[i]
     console.log(option, nameSelected);

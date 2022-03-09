@@ -67,14 +67,33 @@ function gameStart(userOption) {
 
     const computerSelection = computerOption.name;
     const userSelection = userOption.name;
-
+    console.log(`2 ${computerSelection}`);
     display(userOption, computerOption);
 
     if(userSelection === computerSelection) {  
     drawResult();
+    } else {
+        whoWins(userOption, computerSelection);
+        
+        whoWins(computerOption, userSelection);
+
     }
-    console.log(`2 ${computerSelection}`);
+    
 }
+
+
+
+//function will verify if the computer choice is a value from the key 'beats'
+function whoWins(selection, nameSelected) {
+ const options = selection.beats;
+ for (let i = 0; i < options.length; i++) {
+    const option=options[i]
+    console.log(option, nameSelected);
+   if(option === nameSelected) {
+       console.log(`the winner is ${selection.name} and beats ${nameSelected}`);
+   } 
+
+}}
 
 //function for showing the player's selection in their containers
 function display (userSelection, computerOption) {
@@ -92,9 +111,9 @@ function display (userSelection, computerOption) {
     computerDisplay.appendChild(imgComputer);
 }
 
+//function for showing the result in case of a draw
 function drawResult() {
             messageDisplay.innerText = 'This a draw!';
             userDisplay.classList.add('draw-glow');
             computerDisplay.classList.add('draw-glow');
-  
 }

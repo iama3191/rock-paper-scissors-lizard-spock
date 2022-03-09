@@ -62,25 +62,39 @@ function computerRandomChoice() {
 
 //function for starting the game, it iniciates after user clicks on a button
 function gameStart(userOption) {
-    const computerSelection = computerRandomChoice();
-    const choice = computerSelection.name;
+    //a random choice for the computer
+    const computerOption = computerRandomChoice();
+
+    const computerSelection = computerOption.name;
     const userSelection = userOption.name;
-    display(userOption, computerSelection);
-    
-   
-    console.log(`2 ${choice}`);
+
+    display(userOption, computerOption);
+
+    if(userSelection === computerSelection) {  
+    drawResult();
+    }
+    console.log(`2 ${computerSelection}`);
 }
 
-function display (userSelection, computerSelection) {
+//function for showing the player's selection in their containers
+function display (userSelection, computerOption) {
+    //modify style 
     gameDisplay.style.display = 'none';
     battleDisplay.style.display = 'block';
-
+    //create new elements
     const imgUser = document.createElement('img');
     const imgComputer = document.createElement('img');
-
+    //add the image from the array choices
     imgUser.src = userSelection.image;
-    imgComputer.src = computerSelection.image;
-
+    imgComputer.src = computerOption.image;
+    //Add new elements to the DOM
     userDisplay.appendChild(imgUser);
     computerDisplay.appendChild(imgComputer);
+}
+
+function drawResult() {
+            messageDisplay.innerText = 'This a draw!';
+            userDisplay.classList.add('draw-glow');
+            computerDisplay.classList.add('draw-glow');
+  
 }

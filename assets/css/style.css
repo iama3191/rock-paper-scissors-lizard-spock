@@ -106,3 +106,34 @@ body {
   width: 40px;
   height: 40px;
 }
+
+/*-----------------------------Battle container---------------------------*/
+.user-options-container {
+  display: none;
+}
+
+.battle-results {
+  background-color: var(--lose);
+  margin: 1em 0;
+}
+
+.battle {
+  width: 90%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  gap: 3em;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  padding: 1em;
+}
+
+.display {
+  border: 2px solid var(--light);
+  width: 90px;
+  height: 90px;
+  margin-left: auto;
+  margin-right: auto;
+}

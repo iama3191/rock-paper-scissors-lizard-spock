@@ -91,7 +91,6 @@ body {
 
 .user-option {
   background-color: var(--light);
-  padding: 0.5em;
   border-radius: 50%;
   border: 6px solid var(--button-borders);
   box-shadow: 0 0 11px 1px var(--light);
@@ -104,8 +103,9 @@ body {
 }
 
 .hands {
-  width: 40px;
-  height: 40px;
+  padding: 0.5em;
+  width: 50px;
+  height: 50px;
 }
 
 /*-----------------------------Battle container---------------------------*/
@@ -153,9 +153,66 @@ body {
   display: inline-flex;
   padding-top: 0.5em;
   width: 90%;
-  max-width: 900px;
+  max-width: 300px;
 }
 
 .score-user {
   margin-right: auto;
+}
+
+/*-------------------Effects to announce the results */
+.win-glow {
+  background-color: var(--win);
+  box-shadow: 0 0 10px 6px var(--win);
+}
+
+.lose-glow {
+  background-color: var(--lose);
+  box-shadow: 0 0 10px 6px var(--lose);
+}
+
+.draw-glow {
+  background-color: var(--highlight-elements);
+  box-shadow: 0 0 10px 6px var(--highlight-elements);
+  border: none;
+}
+
+/*------------------------media queries*/
+
+/*------------Media query for min-width: 500px and above*/
+@media screen and (min-width: 500px) {
+  .main-info {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .user-options-container {
+    padding: 3em 1.5em;
+    margin-top: 2em;
+    gap: 3.5em;
+  }
+
+  .hands {
+    padding: 1em;
+    width: 90px;
+    height: 90px;
+  }
+
+  .battle-results {
+    padding: 2em 1em;
+  }
+
+  .display {
+    width: 150px;
+    height: 150px;
+  }
+
+  .message {
+    margin-top: 3em;
+    font-size: 1.2rem;
+  }
+
+  .results {
+    font-size: 1.2rem;
+  }
 }

@@ -1,3 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=McLaren&family=Open+Sans:wght@300;400&display=swap");
+
+/*---------------------Global variable--*/
+:root {
+  --dark-bg: rgb(26, 19, 36);
+  --win: rgb(39, 185, 39);
+  --lose: rgb(238, 82, 82);
+  --highlight-elements: rgb(237, 229, 110);
+  --light: rgb(250, 253, 246);
+  --titles: "McLaren", cursive;
+  --text-normal: "Open Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--titles);
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: var(--light);
+  width: 100vw;
+  height: auto;
+  max-width: 2000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+/*-----------------------header--------*/
+.main-info {
+  background-color: aquamarine;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-options {
+  flex-direction: row;
+  justify-items: baseline;
+  align-self: center;
+}
+/*-----------------------game--------*/
+.game {
+  background-color: blue;
+}
+
 img {
   width: 30px;
   height: auto;

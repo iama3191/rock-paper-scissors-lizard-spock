@@ -42,7 +42,6 @@ body {
 }
 /*-----------------------header--------*/
 .main-info {
-  background-color: aquamarine;
   padding: 1em 1.7em;
   display: flex;
   justify-content: space-between;
@@ -61,25 +60,21 @@ body {
 }
 /*-----------------------game--------*/
 .game {
-  background-color: blue;
   width: 100vw;
 }
 
 .outer-game-container {
   margin: 10% auto;
-  background-color: blueviolet;
   width: 90%;
   max-width: 900px;
 }
 
 .user-instruction {
   text-align: center;
-  background-color: brown;
   padding: 0.5em;
 }
 
 .user-options-container {
-  background-color: var(--dark-bg);
   padding: 1.5em 1em;
   display: flex;
   flex-wrap: wrap;

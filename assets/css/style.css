@@ -86,6 +86,7 @@ body {
   justify-content: center;
   align-content: center;
   gap: 1.5em;
+  margin-bottom: 2em;
 }
 
 .user-option {
@@ -108,13 +109,11 @@ body {
 }
 
 /*-----------------------------Battle container---------------------------*/
-.user-options-container {
-  display: none;
-}
 
 .battle-results {
   background-color: var(--lose);
   margin: 1em 0;
+  display: none;
 }
 
 .battle {
@@ -135,5 +134,28 @@ body {
   width: 90px;
   height: 90px;
   margin-left: auto;
+  margin-right: auto;
+}
+
+.message {
+  background-color: rgb(246, 246, 8);
+  padding: 1em 0;
+  text-align: center;
+}
+
+/*--------------------score container---------*/
+
+.results {
+  text-align: center;
+}
+
+.scores {
+  display: inline-flex;
+  padding-top: 0.5em;
+  width: 90%;
+  max-width: 900px;
+}
+
+.score-user {
   margin-right: auto;
 }

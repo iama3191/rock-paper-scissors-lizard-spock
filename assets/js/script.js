@@ -1,24 +1,31 @@
 //Declare constants 
 const choices = [
-    {name: 'rock',
-image: './assets/images/hand-back-fist-solid.svg',
-beats: ['scissors', 'lizard']},
-{name: 'paper',
-image: './assets/images/hand-solid.svg',
-beats: ['rock', 'spock']
-},
-{name: 'scissors',
-image: './assets/images/hand-scissors-solid.svg',
-beats: ['paper', 'lizard']
-},
-{name: 'lizard',
-image: './assets/images/hand-lizard-solid.svg',
-beats: ['paper', 'spock']
-},
-{name: 'spock',
-image: './assets/images/hand-spock-solid.svg',
-beats: ['rock', 'scissors']
-}];
+    {
+        name: 'rock',
+        image: './assets/images/hand-back-fist-solid.svg',
+        beats: ['scissors', 'lizard']
+    },
+    {
+        name: 'paper',
+        image: './assets/images/hand-solid.svg',
+        beats: ['rock', 'spock']
+    },
+    {
+        name: 'scissors',
+        image: './assets/images/hand-scissors-solid.svg',
+        beats: ['paper', 'lizard']
+    },
+    {
+        name: 'lizard',
+        image: './assets/images/hand-lizard-solid.svg',
+        beats: ['paper', 'spock']
+    },
+    {   
+        name: 'spock',
+        image: './assets/images/hand-spock-solid.svg',
+        beats: ['rock', 'scissors']
+    }
+];
 
 const userDisplay = document.querySelector('.user-selection');
 const computerDisplay = document.querySelector('.computer-selection');
@@ -34,15 +41,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
         button.addEventListener('click', function() {
             
-            let optionType = this.getAttribute('data-option');
-            console.log(`1 ${optionType}`);
-            gameStart(optionType);
+            const optionSelected = this.getAttribute('data-option');
+            const userOption = (choices.find(choice => choice.name === optionSelected)).name;
+
+            console.log(`1 ${userOption}`);
+            gameStart(userOption);
         })
     }
 })
 
-//function for having a random choice for the computer
 
+//function for having a random choice for the computer
 function computerRandomChoice() {
     const randomChoice = choices[Math.floor(Math.random() * choices.length)];
     //this will return the object from the random index

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="classic game: rock, paper, scissors. Play online against the computer for 5 rounds">
+    <meta name="keywords" content="rock, paper, scissors, against the computer, online, 5 rounds">
+      <!--link for css stylesheet-->
+      <link rel="stylesheet" href="assets/css/style.css">
+    <title>RPS(LS)</title>
+</head>
+<body>
+    <!--header-->
+    <header class="game-info">
+        <h1 class="title">title</h1>
+        <button class="secundary-btn" id="restart">restart</button>
+        <button class="secundary-btn" id="help" >help</button>
+    </header>
+
+    <!--game section-->
+    <section class="game">
+        <div class="outer-game-container">
+            <h2 class="user-instruction">Make your selection</h2>
+            <!---user's buttons with the respective image-->
+            <div class="user-options-container">
+                <button class="user-option" data-option="rock"><img src="assets/images/hand-back-fist-solid.svg" alt="hand fist represents rock"></button>
+                <button class="user-option" data-option="paper"><img src="assets/images/hand-solid.svg" alt="hand represents paper"></button>
+                <button class="user-option" data-option="scissors"><img src="assets/images/hand-scissors-solid.svg" alt="hand represents scissors"></button>
+                <button class="user-option" data-option="lizard"><img src="assets/images/hand-lizard-solid.svg" alt="hand represents lizard"></button>
+                <button class="user-option" data-option="spock"><img src="assets/images/hand-spock-solid.svg" alt="hand represents spock"></button>
+            </div>
+            <!--battle container. Will be hidden until the user chose his option, will show players' selection and who the winner is-->
+            <div class="battle-results">
+                <div class="battle">
+                    <div class="user-selection"></div>
+                    <div class="computer-selection"></div>
+                </div>
+                <div class="message-container">
+                    <p class="message"></p>
+                </div>
+            </div>
+            <!--score and round results-->
+            <div class="results">
+                <div class="round">
+                    <p class="round-Number">Round: <span class="round-result">0</span></p>
+                </div>
+                <div class="scores">
+                    <p class="score-user">User: <span id="user-result">0</span></p>
+                    <p class="score-computer">Computer: <span id="computer-result">0</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

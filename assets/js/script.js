@@ -36,6 +36,7 @@ const playRound = document.querySelector('.round-result');
 const userPoint = document.getElementById('user-result');
 const computerPoint = document.getElementById('computer-result');
 const newRound = document.getElementById('next-round');
+const restartButton = document.querySelector('#restart');
 
 //From Math Project, Code Institute and adapted for this project 
 //Wait for the DOM to finish loading before running the game
@@ -57,7 +58,18 @@ document.addEventListener('DOMContentLoaded', function() {
     newRound.addEventListener('click', function(){
         nextRound();
     })
+
+    restartButton.addEventListener('click', function() {
+        restartGame();
+    } )
 })
+
+//function will restartGame and set all values as zeros
+function restartGame() {
+    userPoint.innerText = 0;
+    computerPoint.innerText = 0;
+    playRound.innerText = 0;
+}
 
 //function for having a random choice for the computer
 function computerRandomChoice() {

@@ -107,6 +107,7 @@ body {
 
 .battle-results {
   display: none;
+  position: relative;
 }
 
 .battle {
@@ -129,6 +130,12 @@ body {
   height: 90px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#next-round {
+  position: absolute;
+  top: 60%;
+  right: 0;
 }
 
 .message {

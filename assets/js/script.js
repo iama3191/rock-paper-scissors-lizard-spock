@@ -32,9 +32,10 @@ const computerDisplay = document.querySelector('.computer-selection');
 const messageDisplay = document.querySelector('.message');
 const gameDisplay = document.querySelector('.user-options-container');
 const battleDisplay = document.querySelector('.battle-results');
+const playRound = document.querySelector('.round-result');
 const userPoint = document.getElementById('user-result');
 const computerPoint = document.getElementById('computer-result');
-const playRound = document.querySelector('.round-result');
+
 
 //From Math Project, Code Institute and adapted for this project 
 //Wait for the DOM to finish loading before running the game

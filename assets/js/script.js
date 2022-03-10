@@ -81,11 +81,19 @@ function gameStart(userOption) {
             winnerUser(userSelection, computerSelection);
         } else {
             console.log(`5 the user lost`);
+            winnerComputer(userSelection, computerSelection);
         }
     }
 }
 
-// function that will change the userScore
+//function that will change the style of the players container if the computer wins and show a message to the user.
+function winnerComputer(user, computer) {
+    messageDisplay.innerText = `You lose! ${computer} beats ${user}`;
+    computerDisplay.classList.add('win-glow');
+    userDisplay.classList.add('lose-glow');
+}
+
+//function that will change the style of the players container if the user wins and show a message to the user.
 function winnerUser(user, computer) {
     messageDisplay.innerText = `You win! ${user} beats ${computer}`;
     userDisplay.classList.add('win-glow');

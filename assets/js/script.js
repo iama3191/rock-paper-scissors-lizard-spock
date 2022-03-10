@@ -32,6 +32,9 @@ const computerDisplay = document.querySelector('.computer-selection');
 const messageDisplay = document.querySelector('.message');
 const gameDisplay = document.querySelector('.user-options-container');
 const battleDisplay = document.querySelector('.battle-results');
+const userPoint = document.getElementById('user-result');
+const computerPoint = document.getElementById('computer-result');
+const playRound = document.querySelector('round-result');
 
 //From Math Project, Code Institute and adapted for this project 
 //Wait for the DOM to finish loading before running the game
@@ -79,11 +82,18 @@ function gameStart(userOption) {
         if (userWins) {
             console.log(`5 the user won. ${userWins}`);
             winnerUser(userSelection, computerSelection);
+            scoreUser();
         } else {
             console.log(`5 the user lost`);
             winnerComputer(userSelection, computerSelection);
         }
     }
+}
+
+//function that increments the user score by 1 if he wins
+function scoreUser() {
+    let userIncrementScore = parseInt(userPoint.innerText);
+    userPoint.innerText = ++userIncrementScore;
 }
 
 //function that will change the style of the players container if the computer wins and show a message to the user.
@@ -98,6 +108,7 @@ function winnerUser(user, computer) {
     messageDisplay.innerText = `You win! ${user} beats ${computer}`;
     userDisplay.classList.add('win-glow');
     computerDisplay.classList.add('lose-glow');
+
 }
 
 //function will verify if the nameSelected is in the selection.beats 

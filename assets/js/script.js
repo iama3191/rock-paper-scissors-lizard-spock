@@ -86,8 +86,15 @@ function gameStart(userOption) {
         } else {
             console.log(`5 the user lost`);
             winnerComputer(userSelection, computerSelection);
+            scoreComputer();
         }
     }
+}
+
+//function that increments the computer score by 1 if it wins
+function scoreComputer() {
+    let computerIncrementScore = parseInt(computerPoint.innerText);
+    computerPoint.innerText = ++computerIncrementScore;
 }
 
 //function that increments the user score by 1 if he wins

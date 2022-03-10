@@ -34,7 +34,7 @@ const gameDisplay = document.querySelector('.user-options-container');
 const battleDisplay = document.querySelector('.battle-results');
 const userPoint = document.getElementById('user-result');
 const computerPoint = document.getElementById('computer-result');
-const playRound = document.querySelector('round-result');
+const playRound = document.querySelector('.round-result');
 
 //From Math Project, Code Institute and adapted for this project 
 //Wait for the DOM to finish loading before running the game
@@ -75,19 +75,24 @@ function gameStart(userOption) {
     if(userSelection === computerSelection) {  
     drawResult();
     } else {
-        
         //const to determine if the user wins
         const userWins = whoWins(userOption, computerSelection);
 
         if (userWins) {
-            console.log(`5 the user won. ${userWins}`);
             winnerUser(userSelection, computerSelection);
             scoreUser();
         } else {
-            console.log(`5 the user lost`);
             winnerComputer(userSelection, computerSelection);
             scoreComputer();
         }
+    }
+    roundGame(userSelection, computerSelection);
+}
+//function that will increment by 1 the number of rounds
+function roundGame(user, computer) {
+    if (user && computer) {
+        let roundIncrement = parseInt(playRound.innerText);
+        playRound.innerText = ++roundIncrement;
     }
 }
 
@@ -115,7 +120,6 @@ function winnerUser(user, computer) {
     messageDisplay.innerText = `You win! ${user} beats ${computer}`;
     userDisplay.classList.add('win-glow');
     computerDisplay.classList.add('lose-glow');
-
 }
 
 //function will verify if the nameSelected is in the selection.beats 

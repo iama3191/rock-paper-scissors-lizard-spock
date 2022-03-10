@@ -47,7 +47,6 @@ document.addEventListener('DOMContentLoaded', function() {
             //this is the user's choice linked with the choices array
             const userOption = choices.find(choice => choice.name === optionSelected);
 
-            console.log(`1 ${userOption.name}`);
             gameStart(userOption);
         })
     }
@@ -64,38 +63,48 @@ function computerRandomChoice() {
 function gameStart(userOption) {
     //a random choice for the computer
     const computerOption = computerRandomChoice();
-
     const computerSelection = computerOption.name;
     const userSelection = userOption.name;
-    console.log(`2 ${computerSelection}`);
+
+    console.log(`1 ${userOption.name} 2 ${computerSelection}`);
     display(userOption, computerOption);
 
     if(userSelection === computerSelection) {  
     drawResult();
     } else {
-        //i need to arrange this. how this can help?
-        whoWins(userOption, computerSelection);
         
-        whoWins(computerOption, userSelection);
+        //const to determine if the user wins
+        const userWins = whoWins(userOption, computerSelection);
 
+        if (userWins) {
+            console.log(`5 the user won. ${userWins}`);
+            winnerUser(userSelection, computerSelection);
+        } else {
+            console.log(`5 the user lost`);
+        }
     }
-    
 }
 
+// function that will change the userScore
+function winnerUser(user, computer) {
+    messageDisplay.innerText = `You win! ${user} beats ${computer}`;
+    userDisplay.classList.add('win-glow');
+    computerDisplay.classList.add('lose-glow');
+}
 
-
-//function will verify the nameSelected is in the selection.beats 
+//function will verify if the nameSelected is in the selection.beats 
 function whoWins(selection, nameSelected) {
-    //array with the options that can be defeated
+//array with the options that can be defeated
  const options = selection.beats;
  // for loop to evaluate each option and compare with the nameSelected
  for (let i = 0; i < options.length; i++) {
-    const option=options[i]
-    console.log(option, nameSelected);
+    const option = options[i];
+    console.log(`3 ${option} 4 ${nameSelected}`);
    if(option === nameSelected) {
-       console.log(`the winner is ${selection.name} and beats ${nameSelected}`);
-   } 
-
+       return `${selection.name} beats ${nameSelected}`;
+   } //else {
+    //return `${nameSelected} beats ${selection.name}`;
+   //}
 }}
 
 //function for showing the player's selection in their containers
@@ -116,7 +125,7 @@ function display (userSelection, computerOption) {
 
 //function for showing the result in case of a draw
 function drawResult() {
-            messageDisplay.innerText = 'This a draw!';
-            userDisplay.classList.add('draw-glow');
-            computerDisplay.classList.add('draw-glow');
+    messageDisplay.innerText = 'This a draw!';
+    userDisplay.classList.add('draw-glow');
+    computerDisplay.classList.add('draw-glow');
 }

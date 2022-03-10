@@ -54,6 +54,9 @@ document.addEventListener('DOMContentLoaded', function() {
             gameStart(userOption);
         })
     }
+    newRound.addEventListener('click', function(){
+        nextRound();
+    })
 })
 
 //function for having a random choice for the computer
@@ -93,10 +96,26 @@ function roundGame(user, computer) {
     if (user && computer) {
         let roundIncrement = parseInt(playRound.innerText);
         playRound.innerText = ++roundIncrement;
+
+        if (roundIncrement === 5) {
+            gameOver(user,computer);
+        }
     }
-    newRound.addEventListener('click', function(){
-        nextRound();
-    })
+}
+
+//game over  function 
+function gameOver(user, computer) {
+    const userScoreFinal = parseInt(userPoint.innerText);
+    const computerScoreFinal = parseInt(computerPoint.innerText);
+    
+    if (userScoreFinal===computerScoreFinal) {
+        messageDisplay.innerText = `this is a draw. And the final score is ${userScoreFinal} vs ${computerScoreFinal}`;
+    } else if (userScoreFinal > computerScoreFinal) {
+        messageDisplay.innerText = `You win!! the Final score is ${userScoreFinal} vs ${computerScoreFinal}`;
+    } else {
+        messageDisplay .innerText = `You lost!! the Final score is ${userScoreFinal} vs ${computerScoreFinal}`;
+    }
+    
 }
 
 //function that will activate a next round
@@ -124,6 +143,12 @@ function winnerComputer(user, computer) {
     messageDisplay.innerText = `You lose! ${computer} beats ${user}`;
     computerDisplay.classList.add('win-glow');
     userDisplay.classList.add('lose-glow');
+    // code from https://www.w3schools.com/jsref/met_win_settimeout.asp 
+    setTimeout(function (){ userDisplay.classList.remove('lose-glow')
+}, 2500);
+
+setTimeout(function (){ computerDisplay.classList.remove('win-glow')
+}, 2500);
 }
 
 //function that will change the style of the players container if the user wins and show a message to the user.
@@ -131,6 +156,12 @@ function winnerUser(user, computer) {
     messageDisplay.innerText = `You win! ${user} beats ${computer}`;
     userDisplay.classList.add('win-glow');
     computerDisplay.classList.add('lose-glow');
+
+    setTimeout(function (){ userDisplay.classList.remove('win-glow')
+}, 2500);
+
+setTimeout(function (){ computerDisplay.classList.remove('lose-glow')
+}, 2500);
 }
 
 //function will verify if the nameSelected is in the selection.beats 
@@ -173,4 +204,9 @@ function drawResult() {
     messageDisplay.innerText = 'This a draw!';
     userDisplay.classList.add('draw-glow');
     computerDisplay.classList.add('draw-glow');
+    setTimeout(function (){ userDisplay.classList.remove('draw-glow')
+}, 2500);
+
+setTimeout(function (){ computerDisplay.classList.remove('draw-glow')
+}, 2500);
 }

@@ -124,7 +124,6 @@ body {
 }
 
 .display {
-  border: 2px solid var(--light);
   background-color: var(--light);
   width: 90px;
   height: 90px;

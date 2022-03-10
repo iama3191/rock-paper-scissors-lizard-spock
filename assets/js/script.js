@@ -35,7 +35,7 @@ const battleDisplay = document.querySelector('.battle-results');
 const playRound = document.querySelector('.round-result');
 const userPoint = document.getElementById('user-result');
 const computerPoint = document.getElementById('computer-result');
-
+const newRound = document.getElementById('next-round');
 
 //From Math Project, Code Institute and adapted for this project 
 //Wait for the DOM to finish loading before running the game
@@ -70,7 +70,6 @@ function gameStart(userOption) {
     const computerSelection = computerOption.name;
     const userSelection = userOption.name;
 
-    console.log(`1 ${userOption.name} 2 ${computerSelection}`);
     display(userOption, computerOption);
 
     if(userSelection === computerSelection) {  
@@ -95,6 +94,17 @@ function roundGame(user, computer) {
         let roundIncrement = parseInt(playRound.innerText);
         playRound.innerText = ++roundIncrement;
     }
+    newRound.addEventListener('click', function(){
+        nextRound();
+    })
+}
+
+//function that will activate a next round
+function nextRound() {
+    battleDisplay.style.display = 'none';
+    gameDisplay.style.display = 'flex';
+    userDisplay.innerHTML = '';
+    computerDisplay.innerHTML = '';
 }
 
 //function that increments the computer score by 1 if it wins
@@ -149,10 +159,14 @@ function display (userSelection, computerOption) {
     //add the image from the array choices
     imgUser.src = userSelection.image;
     imgComputer.src = computerOption.image;
+    imgUser.classList.add('change-hands');
+    imgComputer.classList.add('change-hands');
     //Add new elements to the DOM
     userDisplay.appendChild(imgUser);
     computerDisplay.appendChild(imgComputer);
+
 }
+
 
 //function for showing the result in case of a draw
 function drawResult() {

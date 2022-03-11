@@ -40,8 +40,7 @@ const restartButton = document.querySelector('#restart');
 const helpButton = document.querySelector('#help');
 const rulesScreen = document.querySelector('.outer-modal-container');
 const returnGame = document.querySelector('#return');
-
-
+const gameOverModal = document.querySelector('.outer-modal-container-over');
 //From Math Project, Code Institute and adapted for this project 
 //Wait for the DOM to finish loading before running the game
 //Get the button elements and add event listeners to them
@@ -121,16 +120,39 @@ function roundGame(user, computer) {
         playRound.innerText = ++roundIncrement;
 
         if (roundIncrement === 5) {
+           
             gameOver(user,computer);
         }
     }
 }
 
+function createModalScreen(user, computer) {
+    //creating and anexing the title of the modal screen, it will change depending on who wins
+    const title= document.createElement('h2');
+    title.classList.add('final-title');
+    document.querySelector('.modal-header-over').appendChild(title);
+
+    //creating and adding the message for the user
+    const finalMessage = document.createElement('p');
+    finalMessage.classList.add('final-message');
+    document.querySelector('.modal-content-over').appendChild(finalMessage);
+
+    //creating and adding the button for the user to restart the game 
+    const gameOverButton = document.createElement('button');
+    gameOverButton.innerHTML = 'try again';
+    gameOverButton.classList.add('new-try');
+    document.querySelector('.modal-footer-over').appendChild(gameOverButton);
+}
+
 //game over  function 
 function gameOver(user, computer) {
+
+    gameOverModal.style.display = 'block';
     const userScoreFinal = parseInt(userPoint.innerText);
     const computerScoreFinal = parseInt(computerPoint.innerText);
     
+    createModalScreen(userScoreFinal, computerScoreFinal);
+
     if (userScoreFinal===computerScoreFinal) {
         messageDisplay.innerText = `this is a draw. And the final score is ${userScoreFinal} vs ${computerScoreFinal}`;
     } else if (userScoreFinal > computerScoreFinal) {
@@ -138,7 +160,6 @@ function gameOver(user, computer) {
     } else {
         messageDisplay .innerText = `You lost!! the Final score is ${userScoreFinal} vs ${computerScoreFinal}`;
     }
-    
 }
 
 //function that will activate a next round

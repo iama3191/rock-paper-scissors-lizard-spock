@@ -180,7 +180,8 @@ body {
 
 /*--------------------modal screens*/
 
-.outer-modal-container {
+.outer-modal-container,
+.outer-modal-container-over {
   position: absolute;
   top: 0;
   width: 100vw;

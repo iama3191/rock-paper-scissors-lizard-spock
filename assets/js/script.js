@@ -183,7 +183,7 @@ function whoWins(selection, nameSelected) {
  // for loop to evaluate each option and compare with the nameSelected
  for (let i = 0; i < options.length; i++) {
     const option = options[i];
-    console.log(`3 ${option} 4 ${nameSelected}`);
+   
    if(option === nameSelected) {
        return `${selection.name} beats ${nameSelected}`;
    } //else {
@@ -207,9 +207,7 @@ function display (userSelection, computerOption) {
     //Add new elements to the DOM
     userDisplay.appendChild(imgUser);
     computerDisplay.appendChild(imgComputer);
-
 }
-
 
 //function for showing the result in case of a draw
 function drawResult() {

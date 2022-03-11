@@ -1,4 +1,4 @@
-//Declare constants 
+//Constants declaration. Below are all the constant that are necessary for the game
 const choices = [
     {
         name: 'rock',
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
         button.addEventListener('click', function() {
             //Will identify the clicked button
             const optionSelected = this.getAttribute('data-option');
-            //this is the user's choice linked with the choices array
+            //this is the user's choice linked with the array choices
             const userOption = choices.find(choice => choice.name === optionSelected);
 
             gameStart(userOption);
@@ -75,17 +75,16 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 })
 
-//function for having a random choice for the computer
+//function for having a random choice for the computer. It will return an object from the array choices
 function computerRandomChoice() {
     const randomChoice = choices[Math.floor(Math.random() * choices.length)];
-    //this will return the object from the random index
     return randomChoice;
 }
 
-//function for starting the game, it iniciates after user clicks on a button
+//function for starting the game, it nitialize after user clicks on a choice
 function gameStart(userOption) {
-    //a random choice for the computer
     const computerOption = computerRandomChoice();
+    //value of the key 'name' from the selected object
     const computerSelection = computerOption.name;
     const userSelection = userOption.name;
 
@@ -114,15 +113,13 @@ function roundGame(user, computer) {
         let roundIncrement = parseInt(playRound.innerText);
         playRound.innerText = ++roundIncrement;
 
-        if (roundIncrement === 5) {
-           
+        if (roundIncrement === 5) { 
             gameOver(user,computer);
         }
     }
 }
 
-
-//function will restartGame and set all values as zeros
+//function will restartGame and set all values to '0'
 function restartGame() {
     userPoint.innerText = 0;
     computerPoint.innerText = 0;
@@ -162,7 +159,6 @@ function gameOver(user, computer) {
     }
 
     playAgain.addEventListener('click', function() {
-
         restartGame();    
     })
 }
@@ -187,47 +183,6 @@ function scoreUser() {
     userPoint.innerText = ++userIncrementScore;
 }
 
-//function that will change the style of the players container if the computer wins and show a message to the user.
-function winnerComputer(user, computer) {
-    messageDisplay.innerText = `You lose! ${computer} beats ${user}`;
-    computerDisplay.classList.add('win-glow');
-    userDisplay.classList.add('lose-glow');
-    // code from https://www.w3schools.com/jsref/met_win_settimeout.asp 
-    setTimeout(function (){ userDisplay.classList.remove('lose-glow')
-}, 2500);
-
-setTimeout(function (){ computerDisplay.classList.remove('win-glow')
-}, 2500);
-}
-
-//function that will change the style of the players container if the user wins and show a message to the user.
-function winnerUser(user, computer) {
-    messageDisplay.innerText = `You win! ${user} beats ${computer}`;
-    userDisplay.classList.add('win-glow');
-    computerDisplay.classList.add('lose-glow');
-
-    setTimeout(function (){ userDisplay.classList.remove('win-glow')
-}, 2500);
-
-setTimeout(function (){ computerDisplay.classList.remove('lose-glow')
-}, 2500);
-}
-
-//function will verify if the nameSelected is in the selection.beats 
-function whoWins(selection, nameSelected) {
-//array with the options that can be defeated
- const options = selection.beats;
- // for loop to evaluate each option and compare with the nameSelected
- for (let i = 0; i < options.length; i++) {
-    const option = options[i];
-   
-   if(option === nameSelected) {
-       return `${selection.name} beats ${nameSelected}`;
-   } //else {
-    //return `${nameSelected} beats ${selection.name}`;
-   //}
-}}
-
 //function for showing the player's selection in their containers
 function display (userSelection, computerOption) {
     //modify style 
@@ -246,6 +201,20 @@ function display (userSelection, computerOption) {
     computerDisplay.appendChild(imgComputer);
 }
 
+//function will verify if the nameSelected is in the selection.beats 
+function whoWins(selection, nameSelected) {
+    //array with the options that can be defeated
+     const options = selection.beats;
+     // for loop to evaluate each option and compare with the nameSelected
+     for (let i = 0; i < options.length; i++) {
+        const option = options[i];
+       
+       if(option === nameSelected) {
+           return `${selection.name} beats ${nameSelected}`;
+       }
+    }
+}
+
 //function for showing the result in case of a draw
 function drawResult() {
     messageDisplay.innerText = 'This a draw!';
@@ -255,6 +224,32 @@ function drawResult() {
 }, 2500);
 
 setTimeout(function (){ computerDisplay.classList.remove('draw-glow')
+}, 2500);
+}
+
+//function that will change the style of the players container if the user wins and show a message to the user.
+function winnerUser(user, computer) {
+    messageDisplay.innerText = `You win! ${user} beats ${computer}`;
+    userDisplay.classList.add('win-glow');
+    computerDisplay.classList.add('lose-glow');
+
+    setTimeout(function (){ userDisplay.classList.remove('win-glow')
+}, 2500);
+
+setTimeout(function (){ computerDisplay.classList.remove('lose-glow')
+}, 2500);
+}
+
+//function that will change the style of the players container if the computer wins and show a message to the user.
+function winnerComputer(user, computer) {
+    messageDisplay.innerText = `You lose! ${computer} beats ${user}`;
+    computerDisplay.classList.add('win-glow');
+    userDisplay.classList.add('lose-glow');
+    // code from https://www.w3schools.com/jsref/met_win_settimeout.asp 
+    setTimeout(function (){ userDisplay.classList.remove('lose-glow')
+}, 2500);
+
+setTimeout(function (){ computerDisplay.classList.remove('win-glow')
 }, 2500);
 }
 

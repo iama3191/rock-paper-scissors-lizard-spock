@@ -37,6 +37,10 @@ const userPoint = document.getElementById('user-result');
 const computerPoint = document.getElementById('computer-result');
 const newRound = document.getElementById('next-round');
 const restartButton = document.querySelector('#restart');
+const helpButton = document.querySelector('#help');
+const rulesScreen = document.querySelector('.outer-modal-container');
+const returnGame = document.querySelector('#return');
+
 
 //From Math Project, Code Institute and adapted for this project 
 //Wait for the DOM to finish loading before running the game
@@ -62,6 +66,13 @@ document.addEventListener('DOMContentLoaded', function() {
     restartButton.addEventListener('click', function() {
         restartGame();
     } )
+
+    helpButton.addEventListener('click', function() {
+        rulesScreen.style.display = 'block';
+    })
+    returnGame.addEventListener('click', function() {
+        rulesScreen.style.display = 'none';
+    })
 })
 
 //function will restartGame and set all values as zeros

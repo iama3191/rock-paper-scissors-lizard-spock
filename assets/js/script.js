@@ -121,6 +121,7 @@ function roundGame(user, computer) {
 
 //function will restartGame and set all values to '0'
 function restartGame() {
+    restartDisplay()
     userPoint.innerText = 0;
     computerPoint.innerText = 0;
     playRound.innerText = 0; 
@@ -165,6 +166,7 @@ function gameOver(user, computer) {
 
 //function that will activate a next round
 function nextRound() {
+    restartDisplay();
     battleDisplay.style.display = 'none';
     gameDisplay.style.display = 'flex';
     userDisplay.innerHTML = '';
@@ -201,6 +203,19 @@ function display (userSelection, computerOption) {
     computerDisplay.appendChild(imgComputer);
 }
 
+function restartDisplay() {
+
+   if(userDisplay.classList.contains('win-glow')) {
+       userDisplay.classList.remove('win-glow');
+       computerDisplay.classList.remove('lose-glow');
+   } else if (userDisplay.classList.contains('lose-glow')) {
+    userDisplay.classList.remove('lose-glow');
+    computerDisplay.classList.remove('win-glow');
+   } else {
+    userDisplay.classList.remove('draw-glow');
+    computerDisplay.classList.remove('draw-glow');
+   }
+} 
 //function will verify if the nameSelected is in the selection.beats 
 function whoWins(selection, nameSelected) {
     //array with the options that can be defeated
@@ -220,11 +235,6 @@ function drawResult() {
     messageDisplay.innerText = 'This a draw!';
     userDisplay.classList.add('draw-glow');
     computerDisplay.classList.add('draw-glow');
-    setTimeout(function (){ userDisplay.classList.remove('draw-glow')
-}, 2500);
-
-setTimeout(function (){ computerDisplay.classList.remove('draw-glow')
-}, 2500);
 }
 
 //function that will change the style of the players container if the user wins and show a message to the user.
@@ -232,12 +242,6 @@ function winnerUser(user, computer) {
     messageDisplay.innerText = `You win! ${user} beats ${computer}`;
     userDisplay.classList.add('win-glow');
     computerDisplay.classList.add('lose-glow');
-
-    setTimeout(function (){ userDisplay.classList.remove('win-glow')
-}, 2500);
-
-setTimeout(function (){ computerDisplay.classList.remove('lose-glow')
-}, 2500);
 }
 
 //function that will change the style of the players container if the computer wins and show a message to the user.
@@ -245,12 +249,6 @@ function winnerComputer(user, computer) {
     messageDisplay.innerText = `You lose! ${computer} beats ${user}`;
     computerDisplay.classList.add('win-glow');
     userDisplay.classList.add('lose-glow');
-    // code from https://www.w3schools.com/jsref/met_win_settimeout.asp 
-    setTimeout(function (){ userDisplay.classList.remove('lose-glow')
-}, 2500);
-
-setTimeout(function (){ computerDisplay.classList.remove('win-glow')
-}, 2500);
 }
 
 //function to create the elements for the modal screen for game over, after 5 rounds

@@ -1,0 +1,17 @@
+    winnerCOmputer
+    
+    // code from https://www.w3schools.com/jsref/met_win_settimeout.asp 
+    setTimeout(function (){ userDisplay.classList.remove('lose-glow')
+}, 2500);
+
+setTimeout(function (){ computerDisplay.classList.remove('win-glow')
+}, 2500);
+
+winnerUser
+
+
+    setTimeout(function (){ userDisplay.classList.remove('win-glow')
+}, 2500);
+
+setTimeout(function (){ computerDisplay.classList.remove('lose-glow')
+}, 2500);

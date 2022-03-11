@@ -73,6 +73,8 @@ document.addEventListener('DOMContentLoaded', function() {
     returnGame.addEventListener('click', function() {
         rulesScreen.style.display = 'none';
     })
+
+    createModalScreen();
 })
 
 //function for having a random choice for the computer. It will return an object from the array choices
@@ -141,9 +143,7 @@ function gameOver(user, computer) {
 
     gameOverModal.style.display = 'block';
     const userScoreFinal = parseInt(userPoint.innerText);
-    const computerScoreFinal = parseInt(computerPoint.innerText);
-    
-    createModalScreen(userScoreFinal, computerScoreFinal);
+    const computerScoreFinal = parseInt(computerPoint.innerText);   
     const gameOverMessage = document.querySelector('.final-message');
     const gameOverTitle = document.querySelector('.final-title');
     const playAgain = document.querySelector('.new-try');
@@ -203,8 +203,9 @@ function display (userSelection, computerOption) {
     computerDisplay.appendChild(imgComputer);
 }
 
+//function to remove clases for new game
 function restartDisplay() {
-
+ //info from https://www.javascripttutorial.net/dom/css/check-if-an-element-contains-a-class/
    if(userDisplay.classList.contains('win-glow')) {
        userDisplay.classList.remove('win-glow');
        computerDisplay.classList.remove('lose-glow');

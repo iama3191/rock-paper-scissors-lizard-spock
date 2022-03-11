@@ -152,13 +152,17 @@ function gameOver(user, computer) {
     const computerScoreFinal = parseInt(computerPoint.innerText);
     
     createModalScreen(userScoreFinal, computerScoreFinal);
-
+    const gameOverMessage = document.querySelector('.final-message');
+    const gameOverTitle = document.querySelector('.final-title');
     if (userScoreFinal===computerScoreFinal) {
-        messageDisplay.innerText = `this is a draw. And the final score is ${userScoreFinal} vs ${computerScoreFinal}`;
+        gameOverTitle.innerText= `It's a draw!`;
+        gameOverMessage.innerText = `The final score is ${userScoreFinal} vs ${computerScoreFinal}`;
     } else if (userScoreFinal > computerScoreFinal) {
-        messageDisplay.innerText = `You win!! the Final score is ${userScoreFinal} vs ${computerScoreFinal}`;
+        gameOverTitle.innerText= `You win!!`;
+        gameOverMessage.innerText = `The final score is ${userScoreFinal} vs ${computerScoreFinal}`;
     } else {
-        messageDisplay .innerText = `You lost!! the Final score is ${userScoreFinal} vs ${computerScoreFinal}`;
+        gameOverTitle.innerText= `You lose!!`;
+        gameOverMessage.innerText = `The final score is ${userScoreFinal} vs ${computerScoreFinal}`; 
     }
 }
 

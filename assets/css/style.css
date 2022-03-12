@@ -7,7 +7,6 @@
   --lose: rgb(255, 83, 73);
   --highlight-elements: rgb(237, 229, 110);
   --light: rgb(255, 254, 235);
-  --button-borders: rgb(119, 71, 187);
   --titles: "McLaren", cursive;
   --text-normal: "Open Sans", sans-serif;
 }
@@ -89,14 +88,16 @@ body {
 .user-option {
   background-color: var(--light);
   border-radius: 50%;
-  border: 6px solid var(--button-borders);
-  box-shadow: 0 0 11px 1px var(--light);
-  transition: transform 2s;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  box-shadow: 0 9px #999;
+  transition: transform 200ms;
 }
 
 .user-option:hover {
   box-shadow: none;
-  transform: rotate(1turn);
+  transform: translateY(10px);
 }
 
 .hands {

@@ -108,8 +108,8 @@ body {
 }
 
 .outer-game-container {
-  margin: 3.5% auto;
-  width: 90%;
+  margin: 4% auto;
+  width: 95%;
   max-width: 900px;
 }
 
@@ -124,7 +124,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  gap: 1.5em;
+  gap: 2em;
   margin-bottom: 2em;
 }
 
@@ -144,9 +144,9 @@ body {
 }
 
 .hands {
-  padding: 0.5em;
-  width: 50px;
-  height: 50px;
+  padding: 0.7em;
+  width: 55px;
+  height: 55px;
 }
 
 /*-----------------------------Battle container---------------------------*/
@@ -159,8 +159,7 @@ body {
 .battle {
   width: 90%;
   max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 5% auto;
   display: flex;
   gap: 3em;
   flex-wrap: wrap;
@@ -177,17 +176,26 @@ body {
   margin-right: auto;
 }
 
+.message-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #next-round {
-  position: absolute;
-  top: 60%;
-  right: 0;
+  padding: 0.5em;
+  font-family: var(--titles);
+  font-weight: bold;
+  background-color: var(--highlight-elements);
+  border: 24px solid var(--dark-bg);
+  text-transform: uppercase;
 }
 
 .message {
-  background-color: rgb(246, 246, 8);
-  padding: 1em 0;
+  background-color: var(--light);
+  padding: 1em;
   text-align: center;
-  color: black;
+  color: var(--dark-bg);
 }
 
 /*--------------------score container---------*/

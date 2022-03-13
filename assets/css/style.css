@@ -163,7 +163,7 @@ body {
   max-width: 900px;
   margin: 5% auto;
   display: flex;
-  gap: 3em;
+  gap: 2em;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
@@ -176,12 +176,14 @@ body {
   height: 90px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0.5em;
 }
 
 .message-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1em;
 }
 
 #next-round {
@@ -189,15 +191,18 @@ body {
   font-family: var(--titles);
   font-weight: bold;
   background-color: var(--highlight-elements);
-  border: 24px solid var(--dark-bg);
   text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
 }
 
 .message {
-  background-color: var(--light);
-  padding: 1em;
+  padding: 0.5em 1em;
+  margin-bottom: 0.5em;
   text-align: center;
-  color: var(--dark-bg);
+  color: var(--light);
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 /*--------------------score container---------*/

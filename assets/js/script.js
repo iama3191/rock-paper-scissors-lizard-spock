@@ -93,7 +93,7 @@ function gameStart(userOption) {
     display(userOption, computerOption);
 
     if(userSelection === computerSelection) {  
-    drawResult();
+    drawResult(userSelection, computerSelection);
     } else {
         //const to determine if the user wins
         const userWins = whoWins(userOption, computerSelection);
@@ -150,13 +150,13 @@ function gameOver(user, computer) {
 
     if (userScoreFinal===computerScoreFinal) {
         gameOverTitle.innerText= `It's a draw!`;
-        gameOverMessage.innerText = `The final score is ${userScoreFinal} vs ${computerScoreFinal}`;
+        gameOverMessage.innerText = `The final score is ${userScoreFinal} vs ${computerScoreFinal}. Do you want to play again?`;
     } else if (userScoreFinal > computerScoreFinal) {
-        gameOverTitle.innerText= `You win!!`;
-        gameOverMessage.innerText = `The final score is ${userScoreFinal} vs ${computerScoreFinal}`;
+        gameOverTitle.innerText= `Congratulations! You win!!`;
+        gameOverMessage.innerText = `The final score is ${userScoreFinal} vs ${computerScoreFinal}. Do you want to play again?`;
     } else {
         gameOverTitle.innerText= `You lose!!`;
-        gameOverMessage.innerText = `The final score is ${userScoreFinal} vs ${computerScoreFinal}`; 
+        gameOverMessage.innerText = `The final score is ${userScoreFinal} vs ${computerScoreFinal}. Do you want to play again?`; 
     }
 
     playAgain.addEventListener('click', function() {
@@ -232,8 +232,8 @@ function whoWins(selection, nameSelected) {
 }
 
 //function for showing the result in case of a draw
-function drawResult() {
-    messageDisplay.innerText = 'This a draw!';
+function drawResult(user, computer) {
+    messageDisplay.innerText = `This is a draw! ${user} equals ${computer}` ;
     userDisplay.classList.add('draw-glow');
     computerDisplay.classList.add('draw-glow');
 }
@@ -266,8 +266,11 @@ function createModalScreen(user, computer) {
 
     //creating and adding the button for the user to restart the game 
     const gameOverButton = document.createElement('button');
-    gameOverButton.innerHTML = 'try again';
+    gameOverButton.innerHTML = 'play again';
     gameOverButton.classList.add('new-try');
     document.querySelector('.modal-footer-over').appendChild(gameOverButton);
 }
+
+//create class for images in the battle container and add style in the css file
+
 

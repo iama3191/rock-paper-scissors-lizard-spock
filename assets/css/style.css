@@ -170,6 +170,9 @@ body {
   padding: 1em;
 }
 
+.battle-results {
+  padding: 1em 2em;
+}
 .display {
   background-color: var(--light);
   width: 90px;
@@ -331,11 +334,12 @@ body {
 }
 
 .modal-header-over {
-  padding: 1.5em 1em 0;
+  padding: 1.5em 1em;
 }
 
 .modal-content-over {
   font-size: 1.5rem;
+  padding: 0 1.2em;
 }
 
 .modal-footer-over {
@@ -357,7 +361,6 @@ body {
 
   .user-options-container {
     padding: 3em 3em;
-
     gap: 3.5em;
   }
 
@@ -365,10 +368,6 @@ body {
     padding: 1em;
     width: 100px;
     height: 100px;
-  }
-
-  .battle-results {
-    padding: 1em 1em;
   }
 
   .display {
@@ -396,7 +395,7 @@ body {
   }
 
   .modal-container {
-    margin: 15% auto;
+    margin: 13% auto;
   }
 
   .modal-title {
@@ -416,7 +415,7 @@ body {
 /*------------Media query for min-width: 900px and above*/
 @media screen and (min-width: 900px) {
   .main-info {
-    padding: 1em 5em;
+    padding: 3em 5em 0;
   }
 
   .title {

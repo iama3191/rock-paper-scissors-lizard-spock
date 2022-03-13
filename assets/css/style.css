@@ -186,14 +186,24 @@ body {
   gap: 1em;
 }
 
-#next-round {
-  padding: 0.5em;
+#next-round,
+#return {
+  padding: 0.5em 1em;
   font-family: var(--titles);
   font-weight: bold;
-  background-color: var(--highlight-elements);
+  font-size: 0.95rem;
+  background-color: var(--light);
+  color: var(--dark-bg);
   text-transform: uppercase;
   border: none;
-  border-radius: 10px;
+  border-radius: 15px;
+  transition: all 1000ms;
+}
+
+#next-round:hover,
+#return:hover {
+  background-color: var(--highlight-elements);
+  transform: scale(1.2);
 }
 
 .message {
@@ -266,15 +276,15 @@ body {
 }
 
 .modal-container {
-  padding: 1em 0;
-  margin: 5% auto;
+  padding: 0.5em 0;
+  margin: 2% auto;
   width: 95%;
   max-width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1em;
-  background-color: rgb(55, 44, 100);
+  background-color: rgb(25, 66, 112);
 }
 
 .rule {
@@ -301,22 +311,6 @@ body {
   margin-top: 0.5em;
 }
 
-#return {
-  font-size: 1rem;
-  padding: 0.5em 1em;
-  background-color: rgb(158, 144, 177);
-  border: 2px solid var(--light);
-  border-radius: 20px;
-  color: var(--light);
-  text-transform: uppercase;
-  transition: transform 1000ms;
-}
-
-#return:hover {
-  background-color: var(--light);
-  color: var(--dark-bg);
-  transform: scale(1.2);
-}
 /*------------------------media queries*/
 
 /*------------Media query for min-width: 500px and above*/

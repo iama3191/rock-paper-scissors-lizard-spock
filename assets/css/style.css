@@ -187,7 +187,8 @@ body {
 }
 
 #next-round,
-#return {
+#return,
+.new-try {
   padding: 0.5em 1em;
   font-family: var(--titles);
   font-weight: bold;
@@ -201,7 +202,8 @@ body {
 }
 
 #next-round:hover,
-#return:hover {
+#return:hover,
+.new-try {
   background-color: var(--highlight-elements);
   transform: scale(1.2);
 }
@@ -288,6 +290,7 @@ body {
   align-items: center;
   gap: 1em;
   background-color: rgb(25, 66, 112);
+  border-radius: 20px;
 }
 
 .rule {
@@ -314,6 +317,30 @@ body {
   margin-top: 0.5em;
 }
 
+.modal-container-over {
+  padding: 0.5em 0;
+  margin: 30% auto;
+  width: 95%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+  background-color: rgb(25, 66, 112);
+  border-radius: 20px;
+}
+
+.modal-header-over {
+  padding: 1.5em 1em 0;
+}
+
+.modal-content-over {
+  font-size: 1.5rem;
+}
+
+.modal-footer-over {
+  padding-bottom: 1.5em;
+}
 /*------------------------media queries*/
 
 /*------------Media query for min-width: 500px and above*/
@@ -329,8 +356,8 @@ body {
   }
 
   .user-options-container {
-    padding: 3.5em 3em;
-    margin-top: 2em;
+    padding: 3em 3em;
+
     gap: 3.5em;
   }
 
@@ -341,7 +368,7 @@ body {
   }
 
   .battle-results {
-    padding: 2em 1em;
+    padding: 1em 1em;
   }
 
   .display {
@@ -389,14 +416,22 @@ body {
 /*------------Media query for min-width: 900px and above*/
 @media screen and (min-width: 900px) {
   .main-info {
-    padding: 3em 5em 0;
+    padding: 1em 5em;
   }
 
   .title {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
   }
 
   .symbol {
     font-size: 3.2rem;
+  }
+
+  .battle {
+    margin: 0 auto;
+  }
+
+  .modal-container-over {
+    margin: 15% auto;
   }
 }

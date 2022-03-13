@@ -270,3 +270,4 @@ function createModalScreen(user, computer) {
     gameOverButton.classList.add('new-try');
     document.querySelector('.modal-footer-over').appendChild(gameOverButton);
 }
+

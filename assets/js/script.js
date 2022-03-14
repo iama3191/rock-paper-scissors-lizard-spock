@@ -27,6 +27,7 @@ const choices = [
     }
 ];
 
+const userInstruction = document.querySelector('.user-instruction');
 const userDisplay = document.querySelector('.user-selection');
 const computerDisplay = document.querySelector('.computer-selection');
 const messageDisplay = document.querySelector('.message');
@@ -129,6 +130,7 @@ function restartGame() {
     playRound.innerText = 0; 
     userDisplay.innerHTML = '';
     computerDisplay.innerHTML = '';
+    userInstruction.style.display = 'block';
     if(battleDisplay.style.display = 'block') {
         battleDisplay.style.display = 'none';
         gameDisplay.style.display = 'flex';
@@ -168,6 +170,7 @@ function gameOver(user, computer) {
 function nextRound() {
     restartDisplay();
     battleDisplay.style.display = 'none';
+    userInstruction.style.display = 'block';
     gameDisplay.style.display = 'flex';
     userDisplay.innerHTML = '';
     computerDisplay.innerHTML = '';
@@ -188,6 +191,7 @@ function scoreUser() {
 //function for showing the player's selection in their containers
 function display (userSelection, computerOption) {
     //modify style 
+    userInstruction.style.display = 'none';
     gameDisplay.style.display = 'none';
     battleDisplay.style.display = 'block';
     //create new elements

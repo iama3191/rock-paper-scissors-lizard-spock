@@ -100,26 +100,33 @@ These fonts are imported from Google Fonts.
 
 1. ### Call to action
 
-2. ### Navigation bar
+2. ### RPS(LS): The game itself
 
-3. ### RPS(LS): The game itself
-
-4. ### Wireframes
+3. ### Wireframes
 
 ## Technologies Used
 
-### Lenguages used
+### - Lenguages used
 
-### Tools
+- HTML5
+- CSS
+- JavaScript
 
-- [Google fonts](https://fonts.google.com/)
-- [Balsamiq wireframes](<https://balsamiq.com/>)
-- [Coolors](https://coolors.co/3c3843-57db57-ede56e-ee5252-fafdf6)
-- [Am I responsive](http://ami.responsivedesign.is/#)
-- [Outwrite](https://www.outwrite.com/)
-- [W3C validator](https://validator.w3.org/)
-- [Jigsaw validator](https://jigsaw.w3.org/css-validator/)
-- [JSHint](https://jshint.com/)
+### - Tools
+
+- [Am I responsive](http://ami.responsivedesign.is/#): Was used to simulate how the game looks at different screen sizes.
+- [Balsamiq wireframes](<https://balsamiq.com/>) : Was used for making wireframes of the game.
+- [Beautifier](https://beautifier.io/) : Was used to organize in a better way the codes.
+- [Coolors](https://coolors.co/3c3843-57db57-ede56e-ee5252-fafdf6) : Was used for checking the color contrast and finding the right shade of each color.
+- [FontAwesome](https://fontawesome.com/) : Was used to add icons  and download images for a more playful website.
+- [GitHub](https://github.com/) : Was used as the repository for the project's code after being pushed from Git.
+- [Google fonts](https://fonts.google.com/) : Was used to import the fonts.
+- [iTerm](https://iterm2.com/) : Was uset as a terminal to commit and Push to GitHub.
+- [Jigsaw validator](https://jigsaw.w3.org/css-validator/) : Was used to validate the CSS file.
+- [JSHint](https://jshint.com/) : Was used to validate the JavaScript file.
+- [Outwrite](https://www.outwrite.com/) : Was used for checking the grammar and spelling of the README file.
+- [Visual Studio Code](https://code.visualstudio.com/) : Was used for version control.-
+- [W3C validator](https://validator.w3.org/): Was used to validate that the HTML file hasn't mistakes.
 
 ## Testing
 

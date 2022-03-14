@@ -173,6 +173,7 @@ body {
 .battle-results {
   padding: 1em 2em;
 }
+
 .display {
   background-color: var(--light);
   width: 90px;
@@ -180,6 +181,14 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.change-hands {
+  width: 80px;
+  height: 80px;
 }
 
 .message-container {
@@ -345,6 +354,7 @@ body {
 .modal-footer-over {
   padding-bottom: 1.5em;
 }
+
 /*------------------------media queries*/
 
 /*------------Media query for min-width: 500px and above*/
@@ -371,8 +381,14 @@ body {
   }
 
   .display {
+    display: flex;
     width: 150px;
     height: 150px;
+  }
+
+  .change-hands {
+    width: 130px;
+    height: 130px;
   }
 
   .message {
@@ -392,10 +408,6 @@ body {
 
   .scores {
     margin-top: 1em;
-  }
-
-  .modal-container {
-    margin: 13% auto;
   }
 
   .modal-title {

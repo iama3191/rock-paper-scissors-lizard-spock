@@ -75,7 +75,7 @@ And with three possible results:
 
 The colors used for this game were chosen according to how they are appreciated in various aspects of daily life. The color-coding in the game is familiar to us, and we already know their meanings, so the game can be pretty intuitive by the colors.
 
-//color palette image
+![Color Palette](assets/images/images-readme/color-palette.png)
 
 The background of the web is a background image where the main color is 'Xiketic' with triangles in a clearer shade of blue from [SVGBackgrounds](SVGBackgrounds.com.) . The color 'Xiketic' is a mix of black and a little purple. Black is associated with mystery and can be easily combined with any color as well. The background has a unique and mysterious design related to the game, but the user doesn't get distracted of the web's goal.
 
@@ -103,6 +103,22 @@ These fonts are imported from Google Fonts.
 2. ### RPS(LS): The game itself
 
 3. ### Wireframes
+
+- #### MOBILE
+
+![how the user clicks on an option](assets/images/images-readme/mobile-1.png)
+
+![Game over](assets/images/images-readme/mobile-3.png)
+
+![Modal screen for help button, showing rules](assets/images/images-readme/mobile-2.png)
+
+- #### DESKTOP
+
+![How the user clicks on an option. Desktop screen](assets/images/images-readme/desktop-1.png)
+
+![Modal screen for help button](assets/images/images-readme/desktop-2.png)
+
+![Game over. Desktop screen](assets/images/images-readme/desktop-3.png)
 
 ## Technologies Used
 
@@ -160,7 +176,7 @@ These fonts are imported from Google Fonts.
 
 5. Save and automatically the site is published.
 
-//Add image of github page
+![Link of pusblished site](assets/images/images-readme/link-deploy-web.png)
 
 ### HOW TO FORK THE REPOSITORY
 

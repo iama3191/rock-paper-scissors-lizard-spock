@@ -2,13 +2,36 @@
 
 ## Description
 
-This is an improved version of the standard game of chance "Rock Paper Scissors". It got popular when it was mentioned in the comedy 'The Big Bang Theory', but initially it was created by Sam Kass and Karen Bryla.
+Rock, Paper, Scissors is a game played to settle differences between two people. The game is taught to kids to resolve their own disputes without adult intervention. However, this game requires quick thinking and perceptive reasoning.
+
+Rock, Paper, Scissors, Lizard, Spock is an improved version of the standard game of chance "Rock Paper Scissors". It got popular when it was mentioned in the comedy 'The Big Bang Theory', but initially it was created by Sam Kass and Karen Bryla.
 
 > I invented this game (with Karen Bryla) because it seems like when you know someone well enough, 75-80% of any Rock-Paper-Scissors games you play with that person end up in a tie. Well, here is a slight variation that reduces that probability.
 >
 > *-Sam Kass*
 
 The game is available in [here.](https://iama3191.github.io/rock-paper-scissors-lizard-spock/)
+
+### How to play?
+
+This game has the following combinations for the victory:
+
+- Scissors cut paper.
+- Paper covers rock.
+- Rock crushes lizard.
+- Lizard poisons Spock.
+- Spock smashes scissors.
+- Scissors decapitate lizard.
+- Lizard eats paper.
+- Paper disproves Spock.
+- Spock vaporizes rock.
+- Rock crushes scissors.
+
+And with three possible results:
+
+- Win
+- Lose
+- Draw
 
 // Add pictures from Am I responsive.
 
@@ -51,7 +74,7 @@ The game is available in [here.](https://iama3191.github.io/rock-paper-scissors-
 
 The colors used for this game were chosen according to how they are appreciated in various aspects of daily life. The color-coding in the game is familiar to us, and we already know their meanings, so the game can be pretty intuitive by the colors. The colors are gray, green, red, yellow, and white.
 
-![Color Palette for the game](assets/images/color-palette.png)
+![Color Palette for the game]
 
 The gray color is a diplomatic color, as it is between black and white, and will be used for the background of the site. On this way, the user can feel that it's in a neutral space facing his challenge.
 

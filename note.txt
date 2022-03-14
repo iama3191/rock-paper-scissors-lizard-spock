@@ -1,17 +1,3 @@
-    winnerCOmputer
-    
-    // code from https://www.w3schools.com/jsref/met_win_settimeout.asp 
-    setTimeout(function (){ userDisplay.classList.remove('lose-glow')
-}, 2500);
-
-setTimeout(function (){ computerDisplay.classList.remove('win-glow')
-}, 2500);
-
-winnerUser
-
-
-    setTimeout(function (){ userDisplay.classList.remove('win-glow')
-}, 2500);
-
-setTimeout(function (){ computerDisplay.classList.remove('lose-glow')
-}, 2500);
+put smaller icons to the rules, they are too big.
+modify the verbs that go with the noun scissors: cuts and decapitates
+see if I can add an if else statement for the messages shown to the user. It's not ' scissors beats anything else, It's scissors beat anything else"

@@ -52,6 +52,7 @@ And with three possible results:
     - [Wireframes](#wireframes)
 
 - [Technologies Used](#technologies-used)
+  - [Lenguages used](#lenguages-used)
   - [Tools](#tools)
 - [Testing](#testing)
   - [Navigation](#navigation)
@@ -93,15 +94,17 @@ And for paragraphs Open San Serif is used, it is a clear and simple font that do
 
 ### Features
 
-1. ### Navigation bar
+1. ### Call to action
 
-2. ### Help button
+2. ### Navigation bar
 
 3. ### RPS(LS): The game itself
 
 4. ### Wireframes
 
 ## Technologies Used
+
+### Lenguages used
 
 ### Tools
 
@@ -110,7 +113,6 @@ And for paragraphs Open San Serif is used, it is a clear and simple font that do
 - [Coolors](https://coolors.co/3c3843-57db57-ede56e-ee5252-fafdf6)
 - [Am I responsive](http://ami.responsivedesign.is/#)
 - [Outwrite](https://www.outwrite.com/)
-- [Bootstrap](https://getbootstrap.com/)
 - [W3C validator](https://validator.w3.org/)
 - [Jigsaw validator](https://jigsaw.w3.org/css-validator/)
 - [JSHint](https://jshint.com/)
@@ -121,15 +123,67 @@ And for paragraphs Open San Serif is used, it is a clear and simple font that do
 
 2. ### Game Functionality Test 1: Handling Clicks
 
-3. ### W3C HTML Test
+3. ### Google Lighthouse Test #1: Performance
 
-4. ### W3C Jigsaw CSS Test
+4. ### Browsers
 
-5. ### JSHint Test
+5. ### Validators
 
-6. ### Google Lighthouse Test #1: Performance
+- ### W3C HTML Test
+
+- ### W3C Jigsaw CSS Test
+
+- ### JSHint Test
 
 ## Deployment
+
+### HOW THIS SITE WAS DEPLOYED
+
+1. In the GitHub repository of the website, go to the "Settings", and click.
+
+2. In the menu on the left side of the screen, go to the "Code and Automation" and click on "Pages".
+
+3. Under the GitHub Pages, select the Main Branch from the dropdown menu.
+
+4. Optionally select the folder in the following dropdown menu.
+
+5. Save and automatically the site is published.
+
+//Add image of github page
+
+### HOW TO FORK THE REPOSITORY
+
+1. Go to the website's repository on Github.
+
+2. Go to the "Fork" button on the right side of the screen and click.
+
+3. Now you have a copy of the repository into your own GitHub account to make changes without affecting the original repository.
+
+### HOW TO CLONE THIS SITE
+
+1. Go to the website's repository  <https://github.com/iama3191/rock-paper-scissors-lizard-spock> on GitHub.
+
+2. Click the "Code" button on the left side of the green "Gitpod" button.
+
+3. Click the HTTPS and copy the link.
+
+4. Open Gitbash.
+
+5. Change the current working directory to where you want the cloned directory to be.
+
+6. Type `git clone`, and then paste the URL you copied earlier.
+
+7. To make changes to the website:
+
+    7.1. Update the code as needed.
+
+    7.2. Go to the terminal and add `git add .`
+
+    7.3. Add `git commit -m "brief description of the update"`
+
+    7.4. Add `git push`
+
+Any updates commited to the Main Branch inmediately reflect in the hosted site.
 
 ## Credits
 

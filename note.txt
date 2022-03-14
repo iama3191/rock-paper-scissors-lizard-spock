@@ -1,3 +1,2 @@
 put smaller icons to the rules, they are too big.
-modify the verbs that go with the noun scissors: cuts and decapitates
-see if I can add an if else statement for the messages shown to the user. It's not ' scissors beats anything else, It's scissors beat anything else"
+https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock

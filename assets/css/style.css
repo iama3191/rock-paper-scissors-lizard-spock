@@ -427,7 +427,7 @@ body {
 /*------------Media query for min-width: 900px and above*/
 @media screen and (min-width: 900px) {
   .main-info {
-    padding: 3em 5em 0;
+    padding: 2.5em 5em 0;
   }
 
   .title {

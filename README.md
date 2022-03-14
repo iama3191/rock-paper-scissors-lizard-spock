@@ -73,11 +73,11 @@ And with three possible results:
 
 ### Colour Theory
 
-The colors used for this game were chosen according to how they are appreciated in various aspects of daily life. The color-coding in the game is familiar to us, and we already know their meanings, so the game can be pretty intuitive by the colors. The colors are gray, green, red, yellow, and white.
+The colors used for this game were chosen according to how they are appreciated in various aspects of daily life. The color-coding in the game is familiar to us, and we already know their meanings, so the game can be pretty intuitive by the colors.
 
-![Color Palette for the game]
+//color palette image
 
-The gray color is a diplomatic color, as it is between black and white, and will be used for the background of the site. On this way, the user can feel that it's in a neutral space facing his challenge.
+The background of the web is a background image where the main color is 'Xiketic' with triangles in a clearer shade of blue from [SVGBackgrounds](SVGBackgrounds.com.) . The color 'Xiketic' is a mix of black and a little purple. Black is associated with mystery and can be easily combined with any color as well. The background has a unique and mysterious design related to the game, but the user doesn't get distracted of the web's goal.
 
 The color green evokes powerful emotions, and it's a dominant color in nature that makes us think of growth. It is also associated with rest, security and progress. This color will highlight who is winning on each round.
 
@@ -91,6 +91,10 @@ The yellow stimulates our nerves, glands and brains, makes us more alert and ene
 
 For headings and important texts, Mclaren regular 400 is used because it is a readable font with a slightly playful look that complements the rest of the site.
 And for paragraphs Open San Serif is used, it is a clear and simple font that does not distract the user. And it is readable for the most important text (rules).
+
+These fonts are imported from Google Fonts.
+
+>`@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Open+Sans:wght@300;400&display=swap');`
 
 ### Features
 

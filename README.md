@@ -2,6 +2,14 @@
 
 ## Description
 
+This is an improved version of the standard game of chance "Rock Paper Scissors". It got popular when it was mentioned in the comedy 'The Big Bang Theory', but initially it was created by Sam Kass and Karen Bryla.
+
+> I invented this game (with Karen Bryla) because it seems like when you know someone well enough, 75-80% of any Rock-Paper-Scissors games you play with that person end up in a tie. Well, here is a slight variation that reduces that probability.
+>
+> *-Sam Kass*
+
+The game is available in [here.](https://iama3191.github.io/rock-paper-scissors-lizard-spock/)
+
 // Add pictures from Am I responsive.
 
 ## Table of content
@@ -101,5 +109,7 @@ And for paragraphs Open San Serif is used, it is a clear and simple font that do
 ## Deployment
 
 ## Credits
+
+Information of the game: <https://cjleo.com/2020/05/25/why-we-dont-play-rock-paper-scissors-lizard-spock/>
 
 ## Aknowlodgements

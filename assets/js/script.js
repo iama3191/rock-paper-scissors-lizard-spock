@@ -1,3 +1,5 @@
+// With the help of tutorial How To Code Rock Paper Scissors In JavaScript https://www.youtube.com/watch?v=1yS-JV4fWqY&t=782s; I was able to understand JavaScript and how I can use an array of objects to improve my code.
+
 //Constants declaration. Below are all the constant that are necessary for the game
 const choices = [
     {
@@ -60,21 +62,22 @@ document.addEventListener('DOMContentLoaded', function() {
             gameStart(userOption);
         })
     }
+    //button for the next round
     newRound.addEventListener('click', function(){
         nextRound();
     })
-
+    //button for restart the game whenever the user wants
     restartButton.addEventListener('click', function() {
         restartGame();
     } )
-
+    //button for showing the rules to the user
     helpButton.addEventListener('click', function() {
         rulesScreen.style.display = 'block';
     })
+    //button for going back to the game
     returnGame.addEventListener('click', function() {
         rulesScreen.style.display = 'none';
     })
-
     createModalScreen();
 })
 
@@ -209,7 +212,7 @@ function display (userSelection, computerOption) {
 
 //function to remove clases for new game
 function restartDisplay() {
- //info from https://www.javascripttutorial.net/dom/css/check-if-an-element-contains-a-class/
+ //code from https://www.javascripttutorial.net/dom/css/check-if-an-element-contains-a-class/
    if(userDisplay.classList.contains('win-glow')) {
        userDisplay.classList.remove('win-glow');
        computerDisplay.classList.remove('lose-glow');
@@ -221,7 +224,8 @@ function restartDisplay() {
     computerDisplay.classList.remove('draw-glow');
    }
 } 
-//function will verify if the nameSelected is in the selection.beats 
+
+//function will verify if the nameSelected is in the selection.beats
 function whoWins(selection, nameSelected) {
     //array with the options that can be defeated
      const options = selection.beats;
@@ -230,7 +234,7 @@ function whoWins(selection, nameSelected) {
         const option = options[i];
        
        if(option === nameSelected) {
-           return `${selection.name} beats ${nameSelected}`;
+           return true;
        }
     }
 }
@@ -275,6 +279,5 @@ function createModalScreen(user, computer) {
     document.querySelector('.modal-footer-over').appendChild(gameOverButton);
 }
 
-//create class for images in the battle container and add style in the css file
 
 

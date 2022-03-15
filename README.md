@@ -223,7 +223,40 @@ All headings are in descending order to make the page easier for a screen reader
 Features Specific to The Game Itself
 
 - Part I: The Choice
+
+   The website has a section with the main layout where the user interacts throughout the game.  This interaction activates the rest of the game. It presents five buttons for each possible option in a single row when the user uses a wider screen size, and two rows for the smaller screens.
+
+*Mobile design of the user's buttons*
+  ![Mobile design of the game](assets/images/images-readme/features/mobile-design-game.png)
+
+*Desktop design of the user's buttons*
+  ![Desktop design of the game](assets/images/images-readme/features/desktop-design-game.png)
+
 - Part II: The Result
+
+When a button is clicked, the buttons automatically disappear and a new container with two boxes appears. The left-hand box is the user's choice and the right-hand box is the computer's choice. Each box has a specific color for each situation. It will be yellow if it is a draw, green when the player wins and red if the player loses.
+
+It was designed by thinking about how the person reads (from left to right, and from top to bottom). And the colors because it is natural to think in green for success, red for danger and yellow as a warning.
+
+Below the boxes is the 'next round' button that hides the result container and show the main container with the buttons once again.
+
+*It's a draw.*
+![It's a draw. User and computer have yellow background](assets/images/images-readme/features/draw.png)
+
+*The user wins.*
+![The user wins. User has green background and computer a red background](assets/images/images-readme/features/user-wins.png)
+
+*The computer wins.*
+![The computer wins. User has a red background and the computer a green background](assets/images/images-readme/features/user-loses.png)
+
+The boxes are in a row for larger screens and for smaller screens they are in columns.
+
+*Mobile design of the result*
+![Mobile design of the players' choices and results](assets/images/images-readme/features/mobile-result-design.png)
+
+*Desktop design of the result*
+![Desktop design of the players' choices and results](assets/images/images-readme/features/desktop-result-design.png)
+
 - The counters
 - Game Over Screen
 
@@ -326,7 +359,7 @@ Future Features
 
     7.3. Add `git commit -m "brief description of the update"`
 
-    7.4. Add `git push`
+    7.4. Add `git push`.
 
 Any updates commited to the Main Branch inmediately reflect in the hosted site.
 
@@ -334,6 +367,13 @@ Any updates commited to the Main Branch inmediately reflect in the hosted site.
 
 - Mentor support, guidance, and tips to improve my coding skills throughout the project:
   - Brian Macharia
+
+- Creator of the game:
+  - Sam Kass with Karen Bryla.
+
+- The Big Bang Theory TV show for the visual explanation:
+
+  - <https://www.youtube.com/watch?v=x5Q6-wMx-K8>
 
 - Information of the game:
 

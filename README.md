@@ -108,26 +108,26 @@ These fonts are imported from Google Fonts.
 
 *Wireframe for when the user clicks on an option and how the design changes to a new one displaying the decisions of both players.*  
 
-![how the user clicks on an option](assets/images/images-readme/mobile-1.png)
+![how the user clicks on an option](assets/images/images-readme/wireframes/mobile-1.png)
 
 *Wireframe for when the user reaches the 5th round and the final winner is picked. The user can start a new game clicking on the 'Play Again' button.*
 
-![Game over](assets/images/images-readme/mobile-3.png)
+![Game over](assets/images/images-readme/wireframes/mobile-3.png)
 
 *Wireframe for how the help is displayed when the user clicks on the help ('?') button.*
 
-![Modal screen for help button, showing rules](assets/images/images-readme/mobile-2.png)
+![Modal screen for help button, showing rules](assets/images/images-readme/wireframes/mobile-2.png)
 
 - #### DESKTOP
 
 *Wireframe for when the user clicks on an option and how the design changes to a new one displaying the decisions of both players.*  
-![How the user clicks on an option. Desktop screen](assets/images/images-readme/desktop-1.png)
+![How the user clicks on an option. Desktop screen](assets/images/images-readme/wireframes/desktop-1.png)
 
 *Wireframe for when the user reaches the 5th round and the final winner is picked. The user can start a new game clicking on the 'Play Again' button.*
-![Modal screen for help button](assets/images/images-readme/desktop-2.png)
+![Game over. Desktop screen](assets/images/images-readme/wireframes/desktop-3.png)
 
 *Wireframe for how the help is displayed when the user clicks on the help ('?') button.*
-![Game over. Desktop screen](assets/images/images-readme/desktop-3.png)
+![Modal screen for help button](assets/images/images-readme/wireframes/desktop-2.png)
 
 ## Technologies Used
 

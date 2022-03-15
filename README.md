@@ -229,6 +229,12 @@ Features Specific to The Game Itself
 
 Future Features
 
+- Add the ability to use a keypress for selecting an option and going to the next round.
+
+- Add the ability to choose a certain number of rounds.
+
+- Add a graphic to show user's selections and tell him if he clicks on an option more than other one.
+
 ## Technologies Used
 
 ### - Lenguages used

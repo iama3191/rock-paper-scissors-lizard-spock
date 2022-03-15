@@ -121,12 +121,15 @@ These fonts are imported from Google Fonts.
 - #### DESKTOP
 
 *Wireframe for when the user clicks on an option and how the design changes to a new one displaying the decisions of both players.*  
+
 ![How the user clicks on an option. Desktop screen](assets/images/images-readme/wireframes/desktop-1.png)
 
 *Wireframe for when the user reaches the 5th round and the final winner is picked. The user can start a new game clicking on the 'Play Again' button.*
+
 ![Game over. Desktop screen](assets/images/images-readme/wireframes/desktop-3.png)
 
 *Wireframe for how the help is displayed when the user clicks on the help ('?') button.*
+
 ![Modal screen for help button](assets/images/images-readme/wireframes/desktop-2.png)
 
 ## Technologies Used

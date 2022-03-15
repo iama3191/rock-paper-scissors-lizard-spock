@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rock, paper, scissors, lizard and spock game, Version from 'The Big Bang Theory'. Play 5 rounds online against the computer">
-    <meta name="keywords" content="rock, paper, scissors, lizard, spock, against the computer, online, 5 rounds, expert level">
+    <meta name="description" content="rock, paper, scissors, lizard and spock game, version from 'The Big Bang Theory'. Play 5 rounds online against the computer">
+    <meta name="keywords" content="rock, paper, scissors, lizard, spock, against the computer, online, 5 rounds, expert level, based on 'The Big Bang Theory'">
       <!--link for css stylesheet-->
       <link rel="stylesheet" href="assets/css/style.css">
     <title>RPS(LS)</title>
@@ -15,8 +15,8 @@
     <header class="main-info">
         <h1 class="title">RPS<span class="symbol">(</span>LS<span class="symbol">)</span></h1>
         <div class="game-options">
-            <button class="secundary-btn" id="restart"><i class="fa-solid fa-arrow-rotate-right"></i></button>
-            <button class="secundary-btn" id="help" ><i class="fa-solid fa-circle-question"></i></button>
+            <button class="secundary-btn" id="restart" aria-label="restart" aria-describedby="button to restart the game at any time"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+            <button class="secundary-btn" id="help" aria-label="help" aria-describedby="button to show the rules without affecting the current game"><i class="fa-solid fa-circle-question"></i></button>
         </div>
     </header>
 
@@ -39,7 +39,7 @@
                     <div class="computer-selection display"></div>
                 </div>
                 <div class="message-container">
-                    <button id="next-round">Next round</button>
+                    <button id="next-round" aria-label="next-round" aria-describedby="button to start a new round against the computer">Next round</button>
                     <p class="message">Message</p>
                 </div>
             </div>
@@ -76,7 +76,7 @@
                 </ul>
             </div>
             <div class="modal-footer">
-                <button id="return">Play</button>
+                <button id="return" aria-label="return to the game" aria-describedby="button to return to the game after checking the rules. The user is forces to click on it if he wants to continue playing">Play</button>
             </div>
         </div>
     </div>

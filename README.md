@@ -154,6 +154,7 @@ These fonts are imported from Google Fonts.
 - [JSHint](https://jshint.com/) : Was used to validate the JavaScript file.
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse?hl=es) : Was used for performance tetsing.
 - [Outwrite](https://www.outwrite.com/) : Was used for checking the grammar and spelling of the README file.
+- [SVG Backgrounds](https://www.svgbackgrounds.com/) : Was used for selecting a background image and adapting the colors to match the color palette.
 - [Visual Studio Code](https://code.visualstudio.com/) : Was used for version control.
 - [WAVE](https://wave.webaim.org/): Was used for checking accessibility and color constrast.
 - [W3C validator](https://validator.w3.org/): Was used to validate that the HTML file hasn't mistakes.
@@ -228,6 +229,32 @@ Any updates commited to the Main Branch inmediately reflect in the hosted site.
 
 ## Credits
 
-Information of the game: <https://cjleo.com/2020/05/25/why-we-dont-play-rock-paper-scissors-lizard-spock/>
+- Mentor support, guidance, and tips to improve my coding skills throughout the project:
+  - Brian Macharia
+
+- Information of the game:
+
+  - <https://cjleo.com/2020/05/25/why-we-dont-play-rock-paper-scissors-lizard-spock/>
+
+- Checking code information:
+  - <https://developer.mozilla.org/>
+  - <https://www.w3schools.com/>
+
+- Checking use on mobile (iPhone SE 2nd generation):
+
+  - Anna Mara Hrgetić Vitols
+
+- Tutorial for using an array of objects for the game, and adapting to my vision:
+
+  - [Web Dev Simplified](https://www.youtube.com/watch?v=1yS-JV4fWqY&t=783s)
+
+- Information for color psychology:
+
+  - <https://www.sensationalcolor.com/color-psychology/>
+  - <https://www.colormatters.com/color-and-design/why-color-matters>
+
+- Information for checking how to use markdown for the README file:
+
+  - <https://www.markdownguide.org/basic-syntax/#images-1>
 
 ## Aknowlodgements

@@ -157,13 +157,18 @@ These fonts are imported from Google Fonts.
 
 ### Imagery
 
-### Features
+I have used for the background an image from [SVG Backgrounds](https://www.svgbackgrounds.com/) where I adapted the colors to fit my color scheme.
+The images shown on the buttons are from [FontAwesome](https://fonts.google.com/) with SVG format, they're in black to maintain neutrality and not getting the user confused by different colors.
 
-1. ### RPS(LS): The game itself
+- ## Skeleton
 
-2. ### Wireframes
+### Layout
 
-- #### MOBILE
+I have used media queries for maintaining the structure integrity throughout different screen sizes.  I have also set a Max-Width for the site for very large screens. In this way the designed layout won't be compromised.  
+The containers are styled with paddings and margins to maintain the original design and to give a neater look to the game on small screens as well on larger ones.
+The design was created using [Balsamiq Wireframes.](https://balsamiq.com/)
+
+- #### Mobile design
 
 *Wireframe for when the user clicks on an option and how the design changes to a new one displaying the decisions of both players.*  
 
@@ -177,7 +182,7 @@ These fonts are imported from Google Fonts.
 
 ![Modal screen for help button, showing rules](assets/images/images-readme/wireframes/mobile-2.png)
 
-- #### DESKTOP
+- #### Desktop design
 
 *Wireframe for when the user clicks on an option and how the design changes to a new one displaying the decisions of both players.*  
 
@@ -191,6 +196,10 @@ These fonts are imported from Google Fonts.
 
 ![Modal screen for help button](assets/images/images-readme/wireframes/desktop-2.png)
 
+### Features
+
+1. ### RPS(LS): The game itself
+
 ## Technologies Used
 
 ### - Lenguages used
@@ -202,7 +211,7 @@ These fonts are imported from Google Fonts.
 ### - Tools
 
 - [Am I responsive](http://ami.responsivedesign.is/#): Was used to simulate how the game looks at different screen sizes.
-- [Balsamiq wireframes](<https://balsamiq.com/>) : Was used for making wireframes of the game.
+- [Balsamiq wireframes](https://balsamiq.com/) : Was used for making wireframes of the game.
 - [Beautifier](https://beautifier.io/) : Was used to organize in a better way the codes.
 - [Coolors](https://coolors.co/3c3843-57db57-ede56e-ee5252-fafdf6) : Was used for checking the color contrast and finding the right shade of each color.
 - [FontAwesome](https://fontawesome.com/) : Was used to add icons  and download images for a more playful website.

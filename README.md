@@ -224,7 +224,7 @@ Features Specific to The Game Itself
 
 - Part I: The Choice
 
-   The website has a section with the main layout where the user interacts throughout the game.  This interaction activates the rest of the game. It presents five buttons for each possible option in a single row when the user uses a wider screen size, and two rows for the smaller screens.
+The website has a section with the main layout where the user interacts throughout the game.  This interaction activates the rest of the game. It presents five buttons for each possible option in a single row when the user uses a wider screen size, and two rows for the smaller screens.
 
 *Mobile design of the user's buttons*
   ![Mobile design of the game](assets/images/images-readme/features/mobile-design-game.png)
@@ -258,7 +258,19 @@ The boxes are in a row for larger screens and for smaller screens they are in co
 ![Desktop design of the players' choices and results](assets/images/images-readme/features/desktop-result-design.png)
 
 - The counters
+
+The game features three counters: for the round, for the user's score and the computer score.
+These counters are in a container with a lighter blue as a background color,  just to get user's attention  without getting distracted from the game.
+
+*Counters set to zero*
+![Initial counters](assets/images/images-readme/features/counters-set-to-0.png)
+
+*Counters after one round*
+![Game counters](assets/images/images-readme/features/counter-after-play.png)
+
 - Game Over Screen
+
+After the fifth round is played, automatically it will appear a modal screen showing the ultimate winner of the game with the final scores. The user will have the opportunity to restart the game by clicking the 'play again' button.
 
 Future Features
 

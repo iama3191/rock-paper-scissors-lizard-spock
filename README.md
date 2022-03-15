@@ -69,9 +69,39 @@ And with three possible results:
 
 ## UX Design
 
-### User stories
+- ## Strategy
 
-### Colour Theory
+### User Stories
+
+Reasons a user may visit the website
+
+- Trying an advanced level of the classic 'Rock Paper Scissors' game.
+
+- Distracting for a few minutes from regular tasks (e.g: job).
+
+- Playing an online game of chance against the computer.
+
+Reasons for the website
+
+- Give the user the opportunity to play a few rounds against a machine.
+
+- Give the user a mentally challenging game with more options to remember.
+
+- ## Scope
+
+What a user may expect
+
+What a user may want
+
+As a developer / business I expect
+
+- ## Structure
+
+- ## Designs
+
+### Surface
+
+Colour Theory
 
 The colors used for this game were chosen according to how they are appreciated in various aspects of daily life. The color-coding in the game is familiar to us, and we already know their meanings, so the game can be pretty intuitive by the colors.
 

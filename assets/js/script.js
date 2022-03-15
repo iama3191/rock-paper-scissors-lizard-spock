@@ -59,26 +59,26 @@ for (let button of buttons) {
         const userOption = choices.find(choice => choice.name === optionSelected);
 
         gameStart(userOption);
-    })
+    });
 }
 //button for the next round
 newRound.addEventListener('click', function() {
     nextRound();
-})
+});
 //button for restart the game whenever the user wants
 restartButton.addEventListener('click', function() {
     restartGame();
-})
+});
 //button for showing the rules to the user
 helpButton.addEventListener('click', function() {
     rulesScreen.style.display = 'block';
-})
+});
 //button for going back to the game
 returnGame.addEventListener('click', function() {
     rulesScreen.style.display = 'none';
-})
+});
 createModalScreen();
-})
+});
 
 //function for having a random choice for the computer. It will return an object from the array choices
 function computerRandomChoice() {
@@ -126,7 +126,7 @@ if (user && computer) {
 
 //function will restartGame and set all values to '0'
 function restartGame() {
-restartDisplay()
+restartDisplay();
 userPoint.innerText = 0;
 computerPoint.innerText = 0;
 playRound.innerText = 0;

@@ -136,9 +136,9 @@ These fonts are imported from Google Fonts.
 
 ### - Lenguages used
 
-- HTML5
-- CSS
-- JavaScript
+- HTML5: Mark-up language using semantic structure.
+- CSS: Cascading style sheet used to style.
+- JavaScript: Programming language.
 
 ### - Tools
 
@@ -152,8 +152,10 @@ These fonts are imported from Google Fonts.
 - [iTerm](https://iterm2.com/) : Was uset as a terminal to commit and Push to GitHub.
 - [Jigsaw validator](https://jigsaw.w3.org/css-validator/) : Was used to validate the CSS file.
 - [JSHint](https://jshint.com/) : Was used to validate the JavaScript file.
+- [Lighthouse](https://developers.google.com/web/tools/lighthouse?hl=es) : Was used for performance tetsing.
 - [Outwrite](https://www.outwrite.com/) : Was used for checking the grammar and spelling of the README file.
-- [Visual Studio Code](https://code.visualstudio.com/) : Was used for version control.-
+- [Visual Studio Code](https://code.visualstudio.com/) : Was used for version control.
+- [WAVE](https://wave.webaim.org/): Was used for checking accessibility and color constrast.
 - [W3C validator](https://validator.w3.org/): Was used to validate that the HTML file hasn't mistakes.
 
 ## Testing

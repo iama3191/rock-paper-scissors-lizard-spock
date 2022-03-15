@@ -91,9 +91,25 @@ Reasons for the website
 
 What a user may expect
 
+- A simple way for choosing an option and facing his opponent.
+
+- Score and round counters.
+
+- See the computer's choice.
+
 What a user may want
 
-As a developer / business I expect
+- A help button for checking the rules of the game.
+
+- A restart button for starting a new game at any moment without waiting until the last round.
+
+- The availability to activate the next round or a new game after the 'Game Over' screen is shown.
+
+As a developer I expect
+
+- To provide an easy and logical navigation of the game.
+- To provide recreational and fun time with a chance game.
+- To provide the opportunity for changing the main colors and fonts easily in the CSS file.
 
 - ## Structure
 

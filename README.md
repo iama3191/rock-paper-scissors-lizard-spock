@@ -168,11 +168,11 @@ These fonts are imported from Google Fonts.
 
 5. ### Validators
 
-- ### W3C HTML Test
+- W3C HTML Test: Code passed the test without warnings or erros.
 
-- ### W3C Jigsaw CSS Test
+- W3C Jigsaw CSS Test: Code passed the test without errors.
 
-- ### JSHint Test
+- JSHint Test
 
 ## Deployment
 

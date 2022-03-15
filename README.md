@@ -172,7 +172,7 @@ These fonts are imported from Google Fonts.
 
 - W3C Jigsaw CSS Test: Code passed the test without errors.
 
-- JSHint Test
+- JSHint Test: Code passed the test without any important warnings.
 
 ## Deployment
 

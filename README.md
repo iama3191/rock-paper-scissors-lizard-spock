@@ -147,13 +147,21 @@ These fonts are imported from Google Fonts.
 
 >`@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Open+Sans:wght@300;400&display=swap');`
 
+### Call to action
+
+- The user's options are buttons for clicking. The style changed when the user hovers, the button looks pressed and with a highlight around it. This is to show what option is selected.
+
+- The 'help' and 'restart' buttons are icons that get bigger when they're on hover. This lets the user know that the buttons can be clicked.
+
+- The 'next round' and 'play again' buttons have the same style and when they're on hover, the color and size change. To let the user know that he is in control of the next action.
+
+### Imagery
+
 ### Features
 
-1. ### Call to action
+1. ### RPS(LS): The game itself
 
-2. ### RPS(LS): The game itself
-
-3. ### Wireframes
+2. ### Wireframes
 
 - #### MOBILE
 

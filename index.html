@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="rock, paper, scissors, lizard and spock game, version from 'The Big Bang Theory'. Play 5 rounds online against the computer">
     <meta name="keywords" content="rock, paper, scissors, lizard, spock, against the computer, online, 5 rounds, expert level, based on 'The Big Bang Theory'">
-      <!--link for css stylesheet-->
-      <link rel="stylesheet" href="assets/css/style.css">
+    <!--link for css stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>RPS(LS)</title>
 </head>
+
 <body>
     <!--header-->
     <header class="main-info">
         <h1 class="title">RPS<span class="symbol">(</span>LS<span class="symbol">)</span></h1>
         <div class="game-options">
-            <button class="secundary-btn" id="restart" aria-label="restart" aria-describedby="button to restart the game at any time"><i class="fa-solid fa-arrow-rotate-right"></i></button>
-            <button class="secundary-btn" id="help" aria-label="help" aria-describedby="button to show the rules without affecting the current game"><i class="fa-solid fa-circle-question"></i></button>
+            <button class="secundary-btn" id="restart" aria-label="restart button at any time"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+            <button class="secundary-btn" id="help" aria-label="help button to clarify rules"><i class="fa-solid fa-circle-question"></i></button>
         </div>
     </header>
 
@@ -27,10 +29,10 @@
             <!---user's buttons with the respective image-->
             <div class="user-options-container">
                 <button class="user-option" data-option="rock"><img class="hands" src="assets/images/hand-back-fist-solid.svg" alt="hand fist represents rock"></button>
-                <button class="user-option" data-option="paper"><img class="hands"  src="assets/images/hand-solid.svg" alt="hand represents paper"></button>
-                <button class="user-option" data-option="scissors"><img class="hands"  src="assets/images/hand-scissors-solid.svg" alt="hand represents scissors"></button>
-                <button class="user-option" data-option="lizard"><img class="hands"  src="assets/images/hand-lizard-solid.svg" alt="hand represents lizard"></button>
-                <button class="user-option" data-option="spock"><img class="hands"  src="assets/images/hand-spock-solid.svg" alt="hand represents spock"></button>
+                <button class="user-option" data-option="paper"><img class="hands" src="assets/images/hand-solid.svg" alt="hand represents paper"></button>
+                <button class="user-option" data-option="scissors"><img class="hands" src="assets/images/hand-scissors-solid.svg" alt="hand represents scissors"></button>
+                <button class="user-option" data-option="lizard"><img class="hands" src="assets/images/hand-lizard-solid.svg" alt="hand represents lizard"></button>
+                <button class="user-option" data-option="spock"><img class="hands" src="assets/images/hand-spock-solid.svg" alt="hand represents spock"></button>
             </div>
             <!--battle container. Will be hidden until the user chose his option, will show players' selection and who the winner is-->
             <div class="battle-results">
@@ -39,7 +41,7 @@
                     <div class="computer-selection display"></div>
                 </div>
                 <div class="message-container">
-                    <button id="next-round" aria-label="next-round" aria-describedby="button to start a new round against the computer">Next round</button>
+                    <button id="next-round" aria-label="button to start a new round">Next round</button>
                     <p class="message">Message</p>
                 </div>
             </div>
@@ -55,6 +57,7 @@
             </div>
         </div>
     </section>
+
     <!--Modal screen for help button-->
     <div class="outer-modal-container">
         <div class="modal-container">
@@ -63,20 +66,20 @@
             </div>
             <div class="modal-content">
                 <ul class="rules">
-                    <li class="rule"><img class="rule-img"  src="assets/images/hand-scissors-solid.svg" alt="hand represents scissors"> <span class="action"> cuts </span> <img class="rule-img"  src="assets/images/hand-solid.svg" alt="hand represents paper"></li>
-                    <li class="rule"><img class="rule-img"  src="assets/images/hand-solid.svg" alt="hand represents paper"> <span class="action"> covers </span> <img class="rule-img" src="assets/images/hand-back-fist-solid.svg" alt="hand fist represents rock"></li>
-                    <li class="rule"><img class="rule-img" src="assets/images/hand-back-fist-solid.svg" alt="hand fist represents rock"> <span class="action"> crushes </span> <img class="rule-img"  src="assets/images/hand-lizard-solid.svg" alt="hand represents lizard"></li>
-                    <li class="rule"> <img class="rule-img"  src="assets/images/hand-lizard-solid.svg" alt="hand represents lizard"> <span class="action"> poisons </span> <img class="rule-img"  src="assets/images/hand-spock-solid.svg" alt="hand represents spock"></li>
-                    <li class="rule"><img class="rule-img"  src="assets/images/hand-spock-solid.svg" alt="hand represents spock"> <span class="action"> smashes </span> <img class="rule-img"  src="assets/images/hand-scissors-solid.svg" alt="hand represents scissors"></li>
-                    <li class="rule"><img class="rule-img"  src="assets/images/hand-scissors-solid.svg" alt="hand represents scissors"> <span class="action"> decapitates </span> <img class="rule-img"  src="assets/images/hand-lizard-solid.svg" alt="hand represents lizard"></li>
-                    <li class="rule"><img class="rule-img"  src="assets/images/hand-lizard-solid.svg" alt="hand represents lizard"> <span class="action"> eats </span><img class="rule-img"  src="assets/images/hand-solid.svg" alt="hand represents paper"></li>
-                    <li class="rule"><img class="rule-img"  src="assets/images/hand-solid.svg" alt="hand represents paper"> <span class="action"> disproves </span><img class="rule-img"  src="assets/images/hand-spock-solid.svg" alt="hand represents spock"></li>
-                    <li class="rule"><img class="rule-img"  src="assets/images/hand-spock-solid.svg" alt="hand represents spock"> <span class="action"> vaporizes </span><img class="rule-img" src="assets/images/hand-back-fist-solid.svg" alt="hand fist represents rock"></li>
-                    <li class="rule"><img class="rule-img" src="assets/images/hand-back-fist-solid.svg" alt="hand fist represents rock"> <span class="action"> crushes </span><img class="rule-img"  src="assets/images/hand-scissors-solid.svg" alt="hand represents scissors"></li>
+                    <li class="rule"><img class="rule-img" src="assets/images/hand-scissors-solid.svg" alt="hand represents scissors"> <span class="action"> cuts </span> <img class="rule-img" src="assets/images/hand-solid.svg" alt="hand represents paper"></li>
+                    <li class="rule"><img class="rule-img" src="assets/images/hand-solid.svg" alt="hand represents paper"> <span class="action"> covers </span> <img class="rule-img" src="assets/images/hand-back-fist-solid.svg" alt="hand fist represents rock"></li>
+                    <li class="rule"><img class="rule-img" src="assets/images/hand-back-fist-solid.svg" alt="hand fist represents rock"> <span class="action"> crushes </span> <img class="rule-img" src="assets/images/hand-lizard-solid.svg" alt="hand represents lizard"></li>
+                    <li class="rule"> <img class="rule-img" src="assets/images/hand-lizard-solid.svg" alt="hand represents lizard"> <span class="action"> poisons </span> <img class="rule-img" src="assets/images/hand-spock-solid.svg" alt="hand represents spock"></li>
+                    <li class="rule"><img class="rule-img" src="assets/images/hand-spock-solid.svg" alt="hand represents spock"> <span class="action"> smashes </span> <img class="rule-img" src="assets/images/hand-scissors-solid.svg" alt="hand represents scissors"></li>
+                    <li class="rule"><img class="rule-img" src="assets/images/hand-scissors-solid.svg" alt="hand represents scissors"> <span class="action"> decapitates </span> <img class="rule-img" src="assets/images/hand-lizard-solid.svg" alt="hand represents lizard"></li>
+                    <li class="rule"><img class="rule-img" src="assets/images/hand-lizard-solid.svg" alt="hand represents lizard"> <span class="action"> eats </span><img class="rule-img" src="assets/images/hand-solid.svg" alt="hand represents paper"></li>
+                    <li class="rule"><img class="rule-img" src="assets/images/hand-solid.svg" alt="hand represents paper"> <span class="action"> disproves </span><img class="rule-img" src="assets/images/hand-spock-solid.svg" alt="hand represents spock"></li>
+                    <li class="rule"><img class="rule-img" src="assets/images/hand-spock-solid.svg" alt="hand represents spock"> <span class="action"> vaporizes </span><img class="rule-img" src="assets/images/hand-back-fist-solid.svg" alt="hand fist represents rock"></li>
+                    <li class="rule"><img class="rule-img" src="assets/images/hand-back-fist-solid.svg" alt="hand fist represents rock"> <span class="action"> crushes </span><img class="rule-img" src="assets/images/hand-scissors-solid.svg" alt="hand represents scissors"></li>
                 </ul>
             </div>
             <div class="modal-footer">
-                <button id="return" aria-label="return to the game" aria-describedby="button to return to the game after checking the rules. The user is forces to click on it if he wants to continue playing">Play</button>
+                <button id="return" aria-label="button to return to the game">Play</button>
             </div>
         </div>
     </div>
@@ -95,4 +98,5 @@
     <!--link for script-->
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>

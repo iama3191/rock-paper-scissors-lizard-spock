@@ -113,6 +113,11 @@ As a developer I expect
 
 - ## Structure
 
+The website will consist of one page:
+
+The first layout consists in the five possible choices for the user to click on. After the user makes a decision, this container isn't displayed anymore and a new one is shown where user and computer are facing each other with the final result of the game.  
+This layout is hidden once again after the user clicks on the 'next round' button.
+
 - ## Designs
 
 ### Surface

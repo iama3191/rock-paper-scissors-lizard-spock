@@ -279,5 +279,6 @@ document.querySelector('.modal-content-over').appendChild(finalMessage);
 const gameOverButton = document.createElement('button');
 gameOverButton.innerHTML = 'play again';
 gameOverButton.classList.add('new-try');
+gameOverButton.setAttribute('aria-label','start button for a new game');
 document.querySelector('.modal-footer-over').appendChild(gameOverButton);
 }

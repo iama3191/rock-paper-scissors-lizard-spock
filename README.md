@@ -57,35 +57,13 @@ And with three possible results:
 
   - [Design](#design)
 
-    - [Colour Theory](#colour-theory)
-
-    - [Typography](#typography)
-
   - [Skeleton](#skeleton)
 
     - [Layout](#layout)
 
   - [Features](#features)
 
-    - [Call to action](#call-to-action)
-
-    - [Imagery](#imagery)
-
-    - [Logo](#logo)
-
-    - [Responsiveness](#responsiveness)
-
-    - [Accessibility](#accessibility)
-
-    - [The Game Itself](#the-game-itself)
-
-    - [Future Features](#future-features)
-
 - [Technologies Used](#technologies-used)
-
-  - [Lenguages used](#lenguages-used)
-
-  - [Tools](#tools)
 
 - [Testing](#testing)
 

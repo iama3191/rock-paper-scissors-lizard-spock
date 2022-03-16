@@ -526,6 +526,10 @@ footer {
     margin: 0 auto;
   }
 
+  #img-box {
+    gap: 1em;
+  }
+
   .modal-container-over {
     margin: 15% auto;
   }

@@ -332,6 +332,7 @@ Future Features
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse?hl=es) : Was used for performance tetsing.
 - [Outwrite](https://www.outwrite.com/) : Was used for checking the grammar and spelling of the README file.
 - [SVG Backgrounds](https://www.svgbackgrounds.com/) : Was used for selecting a background image and adapting the colors to match the color palette.
+- [Table Generator](https://www.tablesgenerator.com/markdown_tables#): Was used for generating the table for the functionality test.
 - [Visual Studio Code](https://code.visualstudio.com/) : Was used for version control.
 - [WAVE](https://wave.webaim.org/): Was used for checking accessibility and color constrast.
 - [W3C validator](https://validator.w3.org/): Was used to validate that the HTML file hasn't mistakes.
@@ -470,6 +471,9 @@ Any updates commited to the Main Branch inmediately reflect in the hosted site.
 
 - Love Math Project for explaining how to use JavaScript:
   - <https://github.com/Code-Institute-Org/love-maths>
+
+- Table generator with mardown style guide:
+  - <https://www.tablesgenerator.com/markdown_tables#>
 
 ## Aknowlodgements
 

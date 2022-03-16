@@ -485,6 +485,10 @@ Any updates commited to the Main Branch inmediately reflect in the hosted site.
 
   - <https://www.markdownguide.org/basic-syntax/#images-1>
 
+- Information about docstrings for JavaScript
+  - <https://www.valentinog.com/blog/jsdoc/>
+  - <https://devhints.io/jsdoc>
+
 - Love Math Project for explaining how to use JavaScript:
   - <https://github.com/Code-Institute-Org/love-maths>
 

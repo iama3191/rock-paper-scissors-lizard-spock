@@ -202,23 +202,25 @@ Universal Features Across the Site
 
 - Logo
 
-// Add photo of the logo
+For the logo I used an acronym of all the options together 'Rock Paper Scissors Lizard Spock'. The last two letters are in parenthesis because these aren't part of the original version.
+
+![logo of the game](assets/images/images-readme/features/Logo.png)
 
 The logo is an acronym for 'Rock Paper Scissors Lizard Spock'. The last two letters are in parenthesis as a simple reminder that the last options are added to the classic game we already know.
 
 - Responsiveness
 
-The website was created to be responsive for every screen size without compromising the game structure. The smallest size that was considered is for an iPhone 5/SE and the largest size is for a max-width of 2000px.  I have done this by using media queries (min-width)
+The website was created to be responsive for every screen size without compromising the game structure. The smallest size that was considered is of an iPhone 5/SE and the largest size is for a max-width of 2000px.  I have done this by using media queries (min-width).
 
 - Accessibility
 
-All fonts-sizes are set in rem unit to maintain the accessibility if the user sets the font-size of the browser.
+  - All fonts-sizes are set in rem unit to maintain the accessibility if the user sets the font-size of the browser.
 
-There is high contrast between the text color and the background color for a better readability.
+  - There is high contrast between the text color and the background color for a better readability.
 
-The fonts were chosen because they are easy to read, and don't present major problems for the user when he need to read.
+  - The fonts were chosen because they are easy to read, and don't present major problems for the user when he need to read.
 
-All headings are in descending order to make the page easier for a screen reader.
+  - All headings are in descending order to make the page easier for a screen reader.
 
 Features Specific to The Game Itself
 

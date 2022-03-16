@@ -1,6 +1,7 @@
 # RPS(LS)
 
 [Play the game in here](https://iama3191.github.io/rock-paper-scissors-lizard-spock/)
+
 [The repository is in here](https://github.com/iama3191/rock-paper-scissors-lizard-spock)
 
 ## Description
@@ -257,6 +258,7 @@ Below the boxes is the 'next round' button that hides the result container and s
 The boxes are in a row for larger screens and for smaller screens they are in columns.
 
 *Mobile design*
+
 ![Mobile design of the players' choices and results](assets/images/images-readme/features/mobile-result-design.png)
 
 *Desktop design*

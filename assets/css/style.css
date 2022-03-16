@@ -300,6 +300,20 @@ body {
 
 footer {
   display: none;
+  line-height: 50px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+#media-link {
+  text-decoration: none;
+  color: var(--highlight-elements);
+  transition: transform 1500ms;
 }
 
 /*--------------------modal screens*/
@@ -464,14 +478,8 @@ footer {
 
   footer {
     display: flex;
-    line-height: 50px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
     justify-content: center;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 

@@ -296,6 +296,12 @@ body {
   box-shadow: 0 0 15px 10px var(--lose);
 }
 
+/*-----------------footer*/
+
+footer {
+  display: none;
+}
+
 /*--------------------modal screens*/
 
 .outer-modal-container,
@@ -454,6 +460,18 @@ body {
   .rule-img {
     width: 30px;
     height: 30px;
+  }
+
+  footer {
+    display: flex;
+    line-height: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

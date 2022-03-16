@@ -46,27 +46,32 @@ And with three possible results:
 - [Table of content](#table-of-content)
 
 - [UX Design](#ux-design)
-  - [User Stories](#user-stories)
-  - [Colour Theory](#colour-theory)
-  - [Typography](#typography)
-  - [Features](#features)
-    - [Navigation bar](#navigation-bar)
-    - [Help button](#help-button)
+  - [Strategy](#strategy)
+    -[User Stories](#user-stories)
+  - [Scope](#scope)
+  - [Structure](#structure)
+  - [Design](#design)
+    -[Colour Theory](#colour-theory)
+    - [Typography](#typography)
+  -[Skeleton](#skeleton)
+    -[Layout](#layout)
     - [RPS(LS): The game itself](#rpsls-the-game-itself)
-    - [Wireframes](#wireframes)
-
+  - [Features](#features)
+    - [Call to action](#call-to-action)
+    - [Imagery](#imagery)
+    - [Logo](#logo)
+    - [Responsiveness](#responsiveness)
+    - [Accessibility](#accessibility)
+    - [The Game Itself](#the-game-itself)
+    - [Future Features](#future-features)
 - [Technologies Used](#technologies-used)
   - [Lenguages used](#lenguages-used)
   - [Tools](#tools)
 - [Testing](#testing)
   - [Navigation](#navigation)
-
-  - [Game Functionality Test 1: Handling Clicks](#game-functionality-test-1-handling-clicks)
-  - [W3C HTML Test:](w3c-html-test)
-  - [W3C Jigsaw CSS Test:](#w3c-jigsaw-css-test)
-  - [JSHint Test:](#jshint-test)
-  - [Google Lighthouse Test #1: Performance:](google-lighthouse-test-1-performance)
-
+  _ [Google Lighthouse Test: Performance](#google-lighthouse-test-performance)
+  - [Browsers](#browsers)
+  - [Validators](#validators)
 - [Deployment](#deployment)
 - [Credits](#credits)
 - [Aknowlodgements](#aknowlodgements)
@@ -122,7 +127,7 @@ The website will consist of one page:
 The first layout consists in the five possible choices for the user to click on. After the user makes a decision, this container isn't displayed anymore and a new one is shown where user and computer are facing each other with the final result of the game.  
 This layout is hidden once again after the user clicks on the 'next round' button.
 
-- ## Designs
+- ## Design
 
 ### Surface
 
@@ -142,7 +147,7 @@ The white color is bright and can create a sense of space or add highlights. Thi
 
 The yellow stimulates our nerves, glands and brains, makes us more alert and energetic, stimulates our memory and promotes communication. It is a color that promotes activity and interaction. For this reason, it is used for the rule button at the top of the page and to highlight a draw.
 
-### Typography
+Typography
 
 For headings and important texts, Mclaren regular 400 is used because it is a readable font with a slightly playful look that complements the rest of the site.
 And for paragraphs Open San Serif is used, it is a clear and simple font that does not distract the user. And it is readable for the most important text (rules).
@@ -150,19 +155,6 @@ And for paragraphs Open San Serif is used, it is a clear and simple font that do
 These fonts are imported from Google Fonts.
 
 >`@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Open+Sans:wght@300;400&display=swap');`
-
-### Call to action
-
-- The user's options are buttons for clicking. The style changed when the user hovers, the button looks pressed and with a highlight around it. This is to show what option is selected.
-
-- The 'help' and 'restart' buttons are icons that get bigger when they're on hover. This lets the user know that the buttons can be clicked.
-
-- The 'next round' and 'play again' buttons have the same style and when they're on hover, the color and size change. To let the user know that he is in control of the next action.
-
-### Imagery
-
-I have used for the background an image from [SVG Backgrounds](https://www.svgbackgrounds.com/) where I adapted the colors to fit my color scheme.
-The images shown on the buttons are from [FontAwesome](https://fonts.google.com/) with SVG format, they're in black to maintain neutrality and not getting the user confused by different colors.
 
 - ## Skeleton
 
@@ -204,7 +196,20 @@ The design was created using [Balsamiq Wireframes.](https://balsamiq.com/)
 
 Universal Features Across the Site
 
-- Logo
+Call to action
+
+- The user's options are buttons for clicking. The style changed when the user hovers, the button looks pressed and with a highlight around it. This is to show what option is selected.
+
+- The 'help' and 'restart' buttons are icons that get bigger when they're on hover. This lets the user know that the buttons can be clicked.
+
+- The 'next round' and 'play again' buttons have the same style and when they're on hover, the color and size change. To let the user know that he is in control of the next action.
+
+Imagery
+
+I have used for the background an image from [SVG Backgrounds](https://www.svgbackgrounds.com/) where I adapted the colors to fit my color scheme.
+The images shown on the buttons are from [FontAwesome](https://fonts.google.com/) with SVG format, they're in black to maintain neutrality and not getting the user confused by different colors.
+
+Logo
 
 For the logo I used an acronym of all the options together 'Rock Paper Scissors Lizard Spock'. The last two letters are in parenthesis because these aren't part of the original version.
 
@@ -226,7 +231,7 @@ The website was created to be responsive for every screen size without compromis
 
   - All headings are in descending order to make the page easier for a screen reader.
 
-Features Specific to The Game Itself
+The Game Itself
 
 - Part I: The Choice
 
@@ -327,8 +332,6 @@ Future Features
 ## Testing
 
 ### Navigation
-
-### Game Functionality Test 1: Handling Clicks
 
 ### Google Lighthouse Test: Performance
 

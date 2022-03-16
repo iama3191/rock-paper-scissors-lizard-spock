@@ -332,7 +332,7 @@ Future Features
 
 ### Google Lighthouse Test: Performance
 
-The first test was made for mobile device, the score was 83% with a warning about Google Chrome extensions.
+The first test was made for mobile devices, the score was 83% with a warning about Google Chrome extensions.
 
 ![mobile 1st performance test](assets/images/images-readme/testing/performance/mobile-first-lighthouse-test.png)
 
@@ -345,6 +345,9 @@ The performance test for desktop was made only after extensions were disabled, g
 ![desktop performance test](assets/images/images-readme/testing/performance/desktop-lighthouse-test.png)
 
 ### Browsers
+
+Google Chrome for Mac
+Safari
 
 ### Validators
 

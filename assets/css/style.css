@@ -374,6 +374,14 @@ body {
 
 /*------------------------media queries*/
 
+/*------------Media query for min-width: 370px and above*/
+@media screen and (min-width: 370px) {
+  .battle {
+    margin: 15% auto;
+    padding: 1.5em 1em;
+  }
+}
+
 /*------------Media query for min-width: 500px and above*/
 @media screen and (min-width: 500px) {
   .main-info {

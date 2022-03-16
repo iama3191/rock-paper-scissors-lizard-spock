@@ -346,8 +346,13 @@ The performance test for desktop was made only after extensions were disabled, g
 
 ### Browsers
 
-Google Chrome for Mac
-Safari
+**Google Chrome Version 99.0.4844.51 (Official Build) (arm64):**
+
+This browser was used for the development and test stages.
+
+**Safari Version 15.3 (17612.4.9.1.8):**
+
+This was used for the test stage. I used the developer tools to verify the responsive design on all screen sizes.
 
 ### Validators
 

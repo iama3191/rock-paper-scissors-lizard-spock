@@ -279,6 +279,7 @@ document.querySelector('.modal-content-over').appendChild(finalMessage);
 const gameOverButton = document.createElement('button');
 gameOverButton.innerHTML = 'play again';
 gameOverButton.classList.add('new-try');
+//info from https://www.educative.io/edpresso/how-to-add-an-id-to-element-in-javascript
 gameOverButton.setAttribute('aria-label','start button for a new game');
 document.querySelector('.modal-footer-over').appendChild(gameOverButton);
 }

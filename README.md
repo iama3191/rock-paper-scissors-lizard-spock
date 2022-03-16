@@ -74,6 +74,7 @@ And with three possible results:
   - [Browsers](#browsers)
 
   - [Validators](#validators)
+  - [Accessibility](#accessibility)
 
 - [Deployment](#deployment)
 
@@ -463,6 +464,8 @@ Any updates commited to the Main Branch inmediately reflect in the hosted site.
 - Checking code information:
   - <https://developer.mozilla.org/>
   - <https://www.w3schools.com/>
+  - <https://www.educative.io/edpresso/how-to-add-an-id-to-element-in-javascript>
+  - <https://www.javascripttutorial.net/dom/css/check-if-an-element-contains-a-class/>
   - <https://www.educative.io/edpresso/how-to-add-an-id-to-element-in-javascript>
 
 - Checking use on mobile (iPhone SE 2nd generation):

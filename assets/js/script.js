@@ -1,4 +1,4 @@
-// With the help of tutorial How To Code Rock Paper Scissors In JavaScript https://www.youtube.com/watch?v=1yS-JV4fWqY&t=782s; I was able to understand JavaScript and how I can use an array of objects to improve my code.
+// With the help of tutorial How To Code Rock Paper Scissors In JavaScript https://www.youtube.com/watch?v=1yS-JV4fWqY&t=782s; I was able to understand JavaScript and how I can use an array of objects to improve my coding skills.
 
 //Constants declaration. Below are all the constant that are necessary for the game
 const choices = [{
@@ -55,7 +55,7 @@ for (let button of buttons) {
     button.addEventListener('click', function() {
         //Will identify the clicked button
         const optionSelected = this.getAttribute('data-option');
-        //this is the user's choice linked with the array choices
+        //method shown in https://www.youtube.com/watch?v=1yS-JV4fWqY&t=782s
         const userOption = choices.find(choice => choice.name === optionSelected);
 
         gameStart(userOption);
@@ -80,13 +80,20 @@ returnGame.addEventListener('click', function() {
 createModalScreen();
 });
 
-//function for having a random choice for the computer. It will return an object from the array choices
+/**
+ * function for getting a random object for the computer
+ * @returns {object}
+ */
+
 function computerRandomChoice() {
 const randomChoice = choices[Math.floor(Math.random() * choices.length)];
 return randomChoice;
 }
 
-//function for starting the game, it nitialize after user clicks on a choice
+/**
+ * //function for starting the game after user clicks on a choice
+ * @param {object} userOption object from array 'choices' 
+ */
 function gameStart(userOption) {
 const computerOption = computerRandomChoice();
 //value of the key 'name' from the selected object
@@ -112,19 +119,25 @@ if (userSelection === computerSelection) {
 roundGame(userSelection, computerSelection);
 }
 
-//function that will increment by 1 the number of rounds
+/**
+ * //function that will increment by 1 the number of rounds
+ * @param {string} user - value of property 'name'
+ * @param {string} computer -value of property 'name'
+ */
 function roundGame(user, computer) {
 if (user && computer) {
     let roundIncrement = parseInt(playRound.innerText);
     playRound.innerText = ++roundIncrement;
 
     if (roundIncrement === 5) {
-        gameOver(user, computer);
+        gameOver();
     }
 }
 }
 
-//function will restartGame and set all values to '0'
+/**
+ * function will restart the game and set scores' values to '0' and restore all the layouts
+ */
 function restartGame() {
 restartDisplay();
 userPoint.innerText = 0;
@@ -142,8 +155,10 @@ if (gameOverModal.style.display = 'block') {
 }
 }
 
-//game over  function 
-function gameOver(user, computer) {
+/**
+ * Function to show a modal screen with the final results of the game
+ */
+function gameOver() {
 
 gameOverModal.style.display = 'block';
 const userScoreFinal = parseInt(userPoint.innerText);
@@ -172,7 +187,9 @@ playAgain.addEventListener('click', function() {
 })
 }
 
-//function that will activate a next round
+/**
+ * function to activate the next round of the game. Main game container appears and battle container is hidden
+ */
 function nextRound() {
 restartDisplay();
 battleDisplay.style.display = 'none';
@@ -182,19 +199,27 @@ userDisplay.innerHTML = '';
 computerDisplay.innerHTML = '';
 }
 
-//function that increments the computer score by 1 if it wins
+/**
+ * function for incrementing the computer's score by 1 if it wins
+ */
 function scoreComputer() {
 let computerIncrementScore = parseInt(computerPoint.innerText);
 computerPoint.innerText = ++computerIncrementScore;
 }
 
-//function that increments the user score by 1 if he wins
+/**
+ * function for incrementing the user's score by 1 if he wins
+ */
 function scoreUser() {
 let userIncrementScore = parseInt(userPoint.innerText);
 userPoint.innerText = ++userIncrementScore;
 }
 
-//function for showing the player's selection in their containers
+/**
+ * function for showing the players' selections in their respective containers
+ * @param {object} userSelection - object from the array choices
+ * @param {object} computerOption object from the array choices
+ */
 function display(userSelection, computerOption) {
 //modify style 
 userInstruction.style.display = 'none';
@@ -213,7 +238,9 @@ userDisplay.appendChild(imgUser);
 computerDisplay.appendChild(imgComputer);
 }
 
-//function to remove clases for new game
+/**
+ * function to remove the clases from the players' containers and restore the original layout
+ */
 function restartDisplay() {
 //code from https://www.javascripttutorial.net/dom/css/check-if-an-element-contains-a-class/
 if (userDisplay.classList.contains('win-glow')) {
@@ -228,7 +255,12 @@ if (userDisplay.classList.contains('win-glow')) {
 }
 }
 
-//function will verify if the nameSelected is in the selection.beats
+/**
+ * function will verify if the computer choice is in the property 'beats' of the user's object
+ * @param {object} selection 
+ * @param {string} nameSelected 
+ * @returns boolean
+ */
 function whoWins(selection, nameSelected) {
 //array with the options that can be defeated
 const options = selection.beats;
@@ -242,29 +274,43 @@ for (let i = 0; i < options.length; i++) {
 }
 }
 
-//function for showing the result in case of a draw
+/**
+ * function for showing the result in case of a draw
+ * @param {string} user 
+ * @param {string} computer 
+ */
 function drawResult(user, computer) {
 messageDisplay.innerText = `This is a draw! ${user} equals ${computer}`;
 userDisplay.classList.add('draw-glow');
 computerDisplay.classList.add('draw-glow');
 }
 
-//function that will change the style of the players container if the user wins and show a message to the user.
+/**
+ * function that will change the style of the players container if the user wins and show a message to the user.
+ * @param {string} user 
+ * @param {string} computer 
+ */
 function winnerUser(user, computer) {
 messageDisplay.innerText = `You win! ${user} beats ${computer}`;
 userDisplay.classList.add('win-glow');
 computerDisplay.classList.add('lose-glow');
 }
 
-//function that will change the style of the players container if the computer wins and show a message to the user.
+/**
+ * function that will change the style of the players container if the computer wins and show a message to the user.
+ * @param {string} user 
+ * @param {string} computer 
+ */
 function winnerComputer(user, computer) {
 messageDisplay.innerText = `You lose! ${computer} beats ${user}`;
 computerDisplay.classList.add('win-glow');
 userDisplay.classList.add('lose-glow');
 }
 
-//function to create the elements for the modal screen for game over, after 5 rounds
-function createModalScreen(user, computer) {
+/**
+ *function to create the elements for the modal screen for game over, after 5 rounds
+ */
+function createModalScreen() {
 //creating and anexing the title of the modal screen, it will change depending on who wins
 const title = document.createElement('h2');
 title.classList.add('final-title');

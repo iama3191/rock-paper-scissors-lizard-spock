@@ -285,18 +285,15 @@ body {
 }
 
 #draw-game {
-  border: 2px solid var(--highlight-elements);
   box-shadow: 0 0 10px 6px var(--highlight-elements);
 }
 
 #win-game {
-  border: 2px solid var(--win);
   box-shadow: 0 0 10px 6px var(--win);
 }
 
 #lose-game {
-  border: 2px solida var(--lose);
-  box-shadow: 0 0 10px 6px var(--lose);
+  box-shadow: 0 0 15px 10px var(--lose);
 }
 
 /*--------------------modal screens*/

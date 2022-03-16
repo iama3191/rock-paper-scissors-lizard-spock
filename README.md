@@ -1,4 +1,7 @@
-# Rock, Paper, Scissors, Lizard, Spock
+# RPS(LS)
+
+[Play the game in here](https://iama3191.github.io/rock-paper-scissors-lizard-spock/)
+[The repository is in here](https://github.com/iama3191/rock-paper-scissors-lizard-spock)
 
 ## Description
 
@@ -33,7 +36,7 @@ And with three possible results:
 - Lose
 - Draw
 
-// Add pictures from Am I responsive.
+![Mockups from 'Am I responsive?'](assets/images/images-readme/screen-sizes-design.png)
 
 ## Table of content
 
@@ -273,8 +276,15 @@ These counters are in a container with a lighter blue as a background color,  ju
 - Game Over Screen
 
 After the fifth round is played, automatically it will appear a modal screen showing the ultimate winner of the game with the final scores. The user will have the opportunity to restart the game by clicking the 'play again' button.
+The border of the container will be highlighted depending on the final result.
 
-//Add photo
+![Screen for game over](assets/images/images-readme/features/game-over-screen.png)
+
+- Help Screen
+
+Everytime the user gets confused about the rules, he can click on the help button on the top of the site, a modal screen will show with all the winning combinations. The other way to return to the game is by clicking the 'play' button.
+
+![Screen for help](assets/images/images-readme/features/rules-container.png)
 
 Future Features
 

@@ -181,7 +181,9 @@ And for paragraphs Open San Serif is used, it is a clear and simple font that do
 
 These fonts are imported from Google Fonts.
 
->`@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Open+Sans:wght@300;400&display=swap');`
+```
+`@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Open+Sans:wght@300;400&display=swap');`
+```
 
 - ## Skeleton
 
@@ -480,4 +482,9 @@ Any updates commited to the Main Branch inmediately reflect in the hosted site.
 
   - <https://www.markdownguide.org/basic-syntax/#images-1>
 
+- Love Math Project for explaining how to use JavaScript:
+  - <https://github.com/Code-Institute-Org/love-maths>
+
 ## Aknowlodgements
+
+This game was built as my second project for [Code Institute](https://codeinstitute.net/global/).

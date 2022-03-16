@@ -326,15 +326,27 @@ Future Features
 
 ## Testing
 
-1. ### Navigation
+### Navigation
 
-2. ### Game Functionality Test 1: Handling Clicks
+### Game Functionality Test 1: Handling Clicks
 
-3. ### Google Lighthouse Test #1: Performance
+### Google Lighthouse Test: Performance
 
-4. ### Browsers
+The first test was made for mobile device, the score was 83% with a warning about Google Chrome extensions.
 
-5. ### Validators
+![mobile 1st performance test](assets/images/images-readme/testing/performance/mobile-first-lighthouse-test.png)
+
+All Chrome extensions were disabled and add preconnecting links to the HTML file for third-party code (Google Fonts and FontAwesome), and I repeated the test on mobile devices, the score got up to 99%.
+
+![mobile performance test without extensions](assets/images/images-readme/testing/performance/mobile-after-lighthouse-test.png)
+
+The performance test for desktop was made only after extensions were disabled, getting a score of 100%.
+
+![desktop performance test](assets/images/images-readme/testing/performance/desktop-lighthouse-test.png)
+
+### Browsers
+
+### Validators
 
 - W3C HTML Test: Code passed the test without warnings or erros.
 

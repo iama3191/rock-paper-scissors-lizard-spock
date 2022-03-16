@@ -253,10 +253,10 @@ Below the boxes is the 'next round' button that hides the result container and s
 
 The boxes are in a row for larger screens and for smaller screens they are in columns.
 
-*Mobile design of the result*
+*Mobile design*
 ![Mobile design of the players' choices and results](assets/images/images-readme/features/mobile-result-design.png)
 
-*Desktop design of the result*
+*Desktop design*
 ![Desktop design of the players' choices and results](assets/images/images-readme/features/desktop-result-design.png)
 
 - The counters
@@ -273,6 +273,8 @@ These counters are in a container with a lighter blue as a background color,  ju
 - Game Over Screen
 
 After the fifth round is played, automatically it will appear a modal screen showing the ultimate winner of the game with the final scores. The user will have the opportunity to restart the game by clicking the 'play again' button.
+
+//Add photo
 
 Future Features
 

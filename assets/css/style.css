@@ -172,7 +172,7 @@ body {
 }
 
 .battle-results {
-  padding: 1em 2em;
+  padding: 0 2em;
 }
 
 .display {
@@ -202,7 +202,7 @@ body {
 #next-round,
 #return,
 .new-try {
-  padding: 0.5em 1em;
+  padding: 0.3em 1em;
   font-family: var(--titles);
   font-weight: bold;
   font-size: 0.95rem;
@@ -320,7 +320,7 @@ body {
 }
 
 .rule-img {
-  width: 30px;
+  width: 20px;
   padding: 0.2em;
   border-radius: 50%;
   background-color: var(--light);
@@ -392,6 +392,10 @@ body {
     height: 130px;
   }
 
+  .battle-results {
+    padding: 1em 2em;
+  }
+
   .message {
     margin-top: 1em;
     font-size: 1.7rem;
@@ -420,8 +424,8 @@ body {
   }
 
   .rule-img {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
   }
 }
 

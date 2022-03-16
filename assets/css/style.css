@@ -379,6 +379,31 @@ footer {
   border-radius: 20px;
 }
 
+#img-box {
+  display: inline-flex;
+  gap: 0.5em;
+  text-align: center;
+  margin-bottom: -0.5em;
+  margin-top: 0.5em;
+}
+
+.img-info {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--highlight-elements);
+}
+
+.modal-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.word {
+  display: block;
+  font-family: var(--titles);
+  color: var(--highlight-elements);
+}
+
 .modal-header-over {
   padding: 1.5em 1em;
 }

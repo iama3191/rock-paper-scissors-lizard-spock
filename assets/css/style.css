@@ -128,6 +128,9 @@ body {
   align-content: center;
   gap: 2em;
   margin-bottom: 2em;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .user-option {
@@ -449,5 +452,9 @@ body {
 
   .modal-container-over {
     margin: 15% auto;
+  }
+
+  .user-options-container {
+    width: 100%;
   }
 }

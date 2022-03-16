@@ -151,14 +151,18 @@ const computerScoreFinal = parseInt(computerPoint.innerText);
 const gameOverMessage = document.querySelector('.final-message');
 const gameOverTitle = document.querySelector('.final-title');
 const playAgain = document.querySelector('.new-try');
+const gameOverContainer = document.querySelector('.modal-container-over');
 
 if (userScoreFinal === computerScoreFinal) {
+    gameOverContainer.setAttribute('id','draw-game');
     gameOverTitle.innerText = `It's a draw!`;
     gameOverMessage.innerText = `The final score is ${userScoreFinal} vs ${computerScoreFinal}. Do you want to play again?`;
 } else if (userScoreFinal > computerScoreFinal) {
+    gameOverContainer.setAttribute('id','win-game');
     gameOverTitle.innerText = `Congratulations! You win!!`;
     gameOverMessage.innerText = `The final score is ${userScoreFinal} vs ${computerScoreFinal}. Do you want to play again?`;
 } else {
+    gameOverContainer.setAttribute('id','lose-game');
     gameOverTitle.innerText = `You lose!!`;
     gameOverMessage.innerText = `The final score is ${userScoreFinal} vs ${computerScoreFinal}. Do you want to play again?`;
 }

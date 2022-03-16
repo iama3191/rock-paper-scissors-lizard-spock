@@ -219,8 +219,8 @@ body {
 
 #next-round:hover,
 #return:hover,
-.new-try {
-  background-color: var(--highlight-elements);
+.new-try:hover {
+  box-shadow: 0 0 10px 3px var(--highlight-elements);
   transform: scale(1.2);
 }
 
@@ -284,6 +284,21 @@ body {
   border: none;
 }
 
+#draw-game {
+  border: 2px solid var(--highlight-elements);
+  box-shadow: 0 0 10px 6px var(--highlight-elements);
+}
+
+#win-game {
+  border: 2px solid var(--win);
+  box-shadow: 0 0 10px 6px var(--win);
+}
+
+#lose-game {
+  border: 2px solida var(--lose);
+  box-shadow: 0 0 10px 6px var(--lose);
+}
+
 /*--------------------modal screens*/
 
 .outer-modal-container,
@@ -342,7 +357,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 3em;
-  background-color: rgb(25, 66, 112);
+  background-color: var(--dark-bg);
   border-radius: 20px;
 }
 

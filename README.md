@@ -298,6 +298,7 @@ Future Features
 - [Balsamiq wireframes](https://balsamiq.com/) : Was used for making wireframes of the game.
 - [Beautifier](https://beautifier.io/) : Was used to organize in a better way the codes.
 - [Coolors](https://coolors.co/3c3843-57db57-ede56e-ee5252-fafdf6) : Was used for checking the color contrast and finding the right shade of each color.
+- [Favicon](https://favicon.io/) : Was used for generating an icon for the tab.
 - [FontAwesome](https://fontawesome.com/) : Was used to add icons  and download images for a more playful website.
 - [GitHub](https://github.com/) : Was used as the repository for the project's code after being pushed from Git.
 - [Google fonts](https://fonts.google.com/) : Was used to import the fonts.

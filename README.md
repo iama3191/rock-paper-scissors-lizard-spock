@@ -46,34 +46,61 @@ And with three possible results:
 - [Table of content](#table-of-content)
 
 - [UX Design](#ux-design)
+
   - [Strategy](#strategy)
-    -[User Stories](#user-stories)
+
+    - [User Stories](#user-stories)
+
   - [Scope](#scope)
+
   - [Structure](#structure)
+
   - [Design](#design)
-    -[Colour Theory](#colour-theory)
+
+    - [Colour Theory](#colour-theory)
+
     - [Typography](#typography)
-  -[Skeleton](#skeleton)
-    -[Layout](#layout)
-    - [RPS(LS): The game itself](#rpsls-the-game-itself)
+
+  - [Skeleton](#skeleton)
+
+    - [Layout](#layout)
+
   - [Features](#features)
+
     - [Call to action](#call-to-action)
+
     - [Imagery](#imagery)
+
     - [Logo](#logo)
+
     - [Responsiveness](#responsiveness)
+
     - [Accessibility](#accessibility)
+
     - [The Game Itself](#the-game-itself)
+
     - [Future Features](#future-features)
+
 - [Technologies Used](#technologies-used)
+
   - [Lenguages used](#lenguages-used)
+
   - [Tools](#tools)
+
 - [Testing](#testing)
+
   - [Navigation](#navigation)
-  _ [Google Lighthouse Test: Performance](#google-lighthouse-test-performance)
+
+  - [Google Lighthouse Test: Performance](#google-lighthouse-test-performance)
+
   - [Browsers](#browsers)
+
   - [Validators](#validators)
+
 - [Deployment](#deployment)
+
 - [Credits](#credits)
+
 - [Aknowlodgements](#aknowlodgements)
 
 ## UX Design

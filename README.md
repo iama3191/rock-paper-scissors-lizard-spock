@@ -37,7 +37,7 @@ And with three possible results:
 - Lose
 - Draw
 
-![Mockups from 'Am I responsive?'](assets/images/images-readme/screen-sizes-design.png)
+![Mockups from 'Am I responsive?'](assets/images/images-readme/screen-size-design.png)
 
 ## Table of content
 
@@ -159,7 +159,7 @@ And for paragraphs Open San Serif is used, it is a clear and simple font that do
 
 These fonts are imported from Google Fonts.
 
-```
+```text
 `@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Open+Sans:wght@300;400&display=swap');`
 ```
 
@@ -224,19 +224,25 @@ For the logo I used an acronym of all the options together 'Rock Paper Scissors 
 
 The logo is an acronym for 'Rock Paper Scissors Lizard Spock'. The last two letters are in parenthesis as a simple reminder that the last options are added to the classic game we already know.
 
-- Responsiveness
+Footer
+
+The footer has the name of the author with a link on the name for the GitHub Profile. The link opens in a new tab.
+The footer is only available for screens above 500px.
+
+![footer](assets/images/images-readme/features/footer.png)
+Responsiveness
 
 The website was created to be responsive for every screen size without compromising the game structure. The smallest size that was considered is of an iPhone 5/SE and the largest size is for a max-width of 2000px.  I have done this by using media queries (min-width).
 
-- Accessibility
+Accessibility
 
-  - All fonts-sizes are set in rem unit to maintain the accessibility if the user sets the font-size of the browser.
+- All fonts-sizes are set in rem unit to maintain the accessibility if the user sets the font-size of the browser.
 
-  - There is high contrast between the text color and the background color for a better readability.
+- There is high contrast between the text color and the background color for a better readability.
 
-  - The fonts were chosen because they are easy to read, and don't present major problems for the user when he need to read.
+- The fonts were chosen because they are easy to read, and don't present major problems for the user when he need to read.
 
-  - All headings are in descending order to make the page easier for a screen reader.
+- All headings are in descending order to make the page easier for a screen reader.
 
 The Game Itself
 
@@ -296,9 +302,9 @@ The border of the container will be highlighted depending on the final result.
 
 - Help Screen
 
-Everytime the user gets confused about the rules, he can click on the help button on the top of the site, a modal screen will show with all the winning combinations. The other way to return to the game is by clicking the 'play' button.
+Everytime the user gets confused about the rules, he can click on the help button on the top of the site, a modal screen will show with all the winning combinations and the respective name of each option in a single row after the title. The other way to return to the game is by clicking the 'play' button.
 
-![Screen for help](assets/images/images-readme/features/rules-container.png)
+![Screen for help](assets/images/images-readme/features/help-screen.png)
 
 Future Features
 
@@ -380,6 +386,13 @@ This was used for the test stage. I used the developer tools to verify the respo
 - W3C Jigsaw CSS Test: Code passed the test without errors.
 
 - JSHint Test: Code passed the test without any important warnings.
+
+### Accessibility
+
+[WAVE](https://wave.webaim.org/) was used for testing the accessibility of the site. The test The first time, the results were that the buttons didn't have 'aria-label', I added the attributes for all buttons and run the test again. The results were better and didn't show errors.
+This web also checked the color contrast and the tests were passed.
+
+![contrast color test](assets/images/images-readme/testing/color-contrast.png)
 
 ## Deployment
 

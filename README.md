@@ -18,14 +18,18 @@ The game is available in [here.](https://iama3191.github.io/rock-paper-scissors-
 
 ### How to play?
 
+The game has 5 options
+
+![options of the game: rock, paper, scissors, lizard and spock](assets/images/images-readme/options.png)
+
 This game has the following combinations for the victory:
 
-- Scissors cut paper.
+- Scissors cuts paper.
 - Paper covers rock.
 - Rock crushes lizard.
 - Lizard poisons Spock.
 - Spock smashes scissors.
-- Scissors decapitate lizard.
+- Scissors decapitates lizard.
 - Lizard eats paper.
 - Paper disproves Spock.
 - Spock vaporizes rock.
@@ -57,6 +61,8 @@ And with three possible results:
 
   - [Design](#design)
 
+    - [Surface](#surface)
+
   - [Skeleton](#skeleton)
 
     - [Layout](#layout)
@@ -64,6 +70,10 @@ And with three possible results:
   - [Features](#features)
 
 - [Technologies Used](#technologies-used)
+
+  - [Lenguages used](#lenguages-used)
+
+  - [Tools](#tools)
 
 - [Testing](#testing)
 
@@ -74,6 +84,7 @@ And with three possible results:
   - [Browsers](#browsers)
 
   - [Validators](#validators)
+
   - [Accessibility](#accessibility)
 
 - [Deployment](#deployment)
@@ -123,7 +134,9 @@ What a user may want
 As a developer I expect
 
 - To provide an easy and logical navigation of the game.
+
 - To provide recreational and fun time with a chance game.
+
 - To provide the opportunity for changing the main colors and fonts easily in the CSS file.
 
 - ## Structure
@@ -206,11 +219,11 @@ Universal Features Across the Site
 
 Call to action
 
-- The user's options are buttons for clicking. The style changed when the user hovers, the button looks pressed and with a highlight around it. This is to show what option is selected.
+- The user's options are buttons for clicking. The style changes when the user hovers, the button looks pressed and with a highlight around it. This is for showing what option is selected.
 
-- The 'help' and 'restart' buttons are icons that get bigger when they're on hover. This lets the user know that the buttons can be clicked.
+- The 'help' and 'restart' buttons are icons that get bigger when they're on hover. This shows to the user that the buttons can be clicked.
 
-- The 'next round' and 'play again' buttons have the same style and when they're on hover, the color and size change. To let the user know that he is in control of the next action.
+- The 'next round' and 'play again' buttons have the same style and when they're on hover, the color and size change. In this way, the user knows that he is in control of the next action.
 
 Imagery
 
@@ -285,7 +298,7 @@ The boxes are in a row for larger screens and for smaller screens they are in co
 
 - The counters
 
-The game features three counters: for the round, for the user's score and the computer score.
+The game features three counters: for the round, for the user's score and the computer's score.
 These counters are in a container with a lighter blue as a background color,  just to get user's attention  without getting distracted from the game.
 
 *Counters set to zero*
@@ -362,7 +375,7 @@ The first test was made for mobile devices, the score was 83% with a warning abo
 
 ![mobile 1st performance test](assets/images/images-readme/testing/performance/mobile-first-lighthouse-test.png)
 
-All Chrome extensions were disabled and add preconnecting links to the HTML file for third-party code (Google Fonts and FontAwesome), and I repeated the test on mobile devices, the score got up to 99%.
+All Chrome extensions were disabled and  preconnecting links were added to the HTML file for third-party code (Google Fonts and FontAwesome), and I repeated the test on mobile devices, the score got up to 99%.
 
 ![mobile performance test without extensions](assets/images/images-readme/testing/performance/mobile-after-lighthouse-test.png)
 
@@ -390,7 +403,7 @@ This was used for the test stage. I used the developer tools to verify the respo
 
 ### Accessibility
 
-[WAVE](https://wave.webaim.org/) was used for testing the accessibility of the site. The test The first time, the results were that the buttons didn't have 'aria-label', I added the attributes for all buttons and run the test again. The results were better and didn't show errors.
+[WAVE](https://wave.webaim.org/) was used for testing the accessibility of the site. For the first test, the results were that the buttons didn't have 'aria-label', I added the attributes for all buttons and run the test again. The results were better and didn't show errors.
 This web also checked the color contrast and the tests were passed.
 
 ![contrast color test](assets/images/images-readme/testing/color-contrast.png)
@@ -464,9 +477,17 @@ Any updates commited to the Main Branch inmediately reflect in the hosted site.
 - Checking code information:
   - <https://developer.mozilla.org/>
   - <https://www.w3schools.com/>
-  - <https://www.educative.io/edpresso/how-to-add-an-id-to-element-in-javascript>
   - <https://www.javascripttutorial.net/dom/css/check-if-an-element-contains-a-class/>
+
+  ```JavaScript
+  element.classList.contains(className);
+  ```
+
   - <https://www.educative.io/edpresso/how-to-add-an-id-to-element-in-javascript>
+
+  ```JavaScript
+  terms.setAttribute(‘id’,‘para-1’);
+  ```
 
 - Checking use on mobile (iPhone SE 2nd generation):
 
@@ -475,6 +496,10 @@ Any updates commited to the Main Branch inmediately reflect in the hosted site.
 - Tutorial for using an array of objects for the game, and adapting to my vision:
 
   - [Web Dev Simplified](https://www.youtube.com/watch?v=1yS-JV4fWqY&t=783s)
+
+  ```text
+  const selection = SELECTIONS.find(selection => selection.name === selectionName)
+  ```
 
 - Information for color psychology:
 

@@ -309,7 +309,7 @@ These counters are in a container with a lighter blue as a background color,  ju
 
 - Game Over Screen
 
-After the fifth round is played, automatically it will appear a modal screen showing the ultimate winner of the game with the final scores. The user will have the opportunity to restart the game by clicking the 'play again' button.
+After the fifth round is played, automatically it will appear a modal screen showing the results pf the last round an who is the ultimate winner of the game with the final scores. The user will have the opportunity to restart the game by clicking the 'play again' button.
 The border of the container will be highlighted depending on the final result.
 
 ![Screen for game over](assets/images/images-readme/features/game-over-screen.png)

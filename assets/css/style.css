@@ -70,6 +70,7 @@ body {
 }
 
 .secundary-btn {
+  cursor: pointer;
   border: none;
   outline: none;
   border-radius: 20px;
@@ -215,6 +216,7 @@ body {
   border: none;
   border-radius: 15px;
   transition: all 1000ms;
+  cursor: pointer;
 }
 
 #next-round:hover,
@@ -369,7 +371,7 @@ footer {
 .modal-container-over {
   padding: 0.5em 0;
   margin: 30% auto;
-  width: 95%;
+  width: 92%;
   max-width: 500px;
   display: flex;
   flex-direction: column;

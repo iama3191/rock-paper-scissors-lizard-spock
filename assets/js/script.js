@@ -155,10 +155,10 @@ if (gameOverModal.style.display = 'block') {
 }
 
 /**
- * Function to show a modal screen with the final results of the game
- * @param {string} user option selected 
- * @param {string} computer random choice
- */
+* Function to show a modal screen with the final results of the game
+* @param {string} user option selected 
+* @param {string} computer random choice
+*/
 function gameOver(user, computer) {
 gameOverModal.style.display = 'block';
 const userScoreFinal = parseInt(userPoint.innerText);

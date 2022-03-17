@@ -408,6 +408,10 @@ This web also checked the color contrast and the tests were passed.
 
 ![contrast color test](assets/images/images-readme/testing/color-contrast.png)
 
+### User stories
+
+I asked a couple of friends to check the game without explaining anything else. They went through the game without any problem, even though they didn't know what the 'lizard' and 'spock' options were.  For this reason, I added to the help modal screen  the name of each option.
+
 ## Deployment
 
 ### HOW THIS SITE WAS DEPLOYED
@@ -489,6 +493,10 @@ Any updates commited to the Main Branch inmediately reflect in the hosted site.
   terms.setAttribute(‘id’,‘para-1’);
   ```
 
+- Checking functionality of the game and giving constantly feedback:
+
+  - Petar Hrgetić Vitols
+  
 - Checking use on mobile (iPhone SE 2nd generation):
 
   - Anna Mara Hrgetić Vitols

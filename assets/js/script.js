@@ -84,7 +84,6 @@ createModalScreen();
 * function for getting a random object for the computer
 * @returns {object}
 */
-
 function computerRandomChoice() {
 const randomChoice = choices[Math.floor(Math.random() * choices.length)];
 return randomChoice;
@@ -130,7 +129,7 @@ if (user && computer) {
     playRound.innerText = ++roundIncrement;
 
     if (roundIncrement === 5) {
-        gameOver();
+        gameOver(user, computer);
     }
 }
 }
@@ -156,10 +155,11 @@ if (gameOverModal.style.display = 'block') {
 }
 
 /**
-* Function to show a modal screen with the final results of the game
-*/
-function gameOver() {
-
+ * Function to show a modal screen with the final results of the game
+ * @param {string} user option selected 
+ * @param {string} computer random choice
+ */
+function gameOver(user, computer) {
 gameOverModal.style.display = 'block';
 const userScoreFinal = parseInt(userPoint.innerText);
 const computerScoreFinal = parseInt(computerPoint.innerText);
@@ -171,15 +171,15 @@ const gameOverContainer = document.querySelector('.modal-container-over');
 if (userScoreFinal === computerScoreFinal) {
     gameOverContainer.setAttribute('id', 'draw-game');
     gameOverTitle.innerText = `It's a draw!`;
-    gameOverMessage.innerText = `The final score is ${userScoreFinal} vs ${computerScoreFinal}. Do you want to play again?`;
+    gameOverMessage.innerHTML = `The last round was ${user} vs ${computer}. <br> The final score is ${userScoreFinal} vs ${computerScoreFinal}. <br>Do you want to play again?`;
 } else if (userScoreFinal > computerScoreFinal) {
     gameOverContainer.setAttribute('id', 'win-game');
     gameOverTitle.innerText = `Congratulations! You win!!`;
-    gameOverMessage.innerText = `The final score is ${userScoreFinal} vs ${computerScoreFinal}. Do you want to play again?`;
+    gameOverMessage.innerHTML = `The last round was ${user} vs ${computer}. <br> The final score is ${userScoreFinal} vs ${computerScoreFinal}. <br>Do you want to play again?`;
 } else {
     gameOverContainer.setAttribute('id', 'lose-game');
     gameOverTitle.innerText = `You lose!!`;
-    gameOverMessage.innerText = `The final score is ${userScoreFinal} vs ${computerScoreFinal}. Do you want to play again?`;
+    gameOverMessage.innerHTML = `The last round was ${user} vs ${computer}. <br> The final score is ${userScoreFinal} vs ${computerScoreFinal}. <br>Do you want to play again?`;
 }
 
 playAgain.addEventListener('click', function() {
